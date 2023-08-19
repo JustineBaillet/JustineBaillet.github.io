@@ -110,6 +110,9 @@
   footer {
     display: none;
   }
+  .projet:hover {
+    transform: none;
+  }
   body {
     background-color: #fabc91;
   }
