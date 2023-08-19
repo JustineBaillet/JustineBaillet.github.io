@@ -80,22 +80,24 @@
 .experience {
   text-align: center;
   margin: 10px 40px;
+  width: 350px;
 }
 
 .experience h4 {
   font-size: 22px;
   font-weight: bold;
   line-height: 25px;
-  width: 300px;
-  height: 40px;
+  height: 50px;
+}
+
+.experience h4 span {
+  font-size: 18px;
 }
 
 .experience p {
   color: rgba(255, 255, 255, 0.822);
   font-size: 18px;
-  width: 300px;
   margin: 20px 0;
-  font-weight: 400;
 }
 
 @media screen and (max-width: 840px) {

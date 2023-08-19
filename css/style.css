@@ -208,10 +208,6 @@ footer {
   height: 35px;
 }
 
-
-
-
-
 @media screen and (max-width: 520px) { 
   h2 {
     font-size: 2.8rem;
