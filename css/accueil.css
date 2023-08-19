@@ -1,0 +1,124 @@
+.section1 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 400px; */
+  min-height: 41vh;
+}
+.profil {
+  padding: 50px;
+  width: 40%;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.profil p {
+  line-height: 23px;
+}
+
+.profil a {
+  color: rgb(58, 58, 58);
+}
+
+.profil a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.photo {
+  width: 400px;
+  box-shadow: 20px 2px 50px rgba(127, 155, 206, 0.5);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo img {
+  border-radius: 50px 50px 0 0;
+  max-width: 100%;
+}
+
+.photo p {
+  box-shadow: 4px 20px 50px #ffffff, 20px 20px 50px rgba(127, 155, 206, 0.5);
+  border-radius: 0 0 50px 50px;
+  background-color: white;
+  font-size: 1.7em;
+  font-weight: bold;
+  font-family: "Baloo 2", sans-serif;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.section2 {
+  text-align: center;
+  padding: 30px 0px;
+  min-height: 300px;
+  color: #ffffff;
+  width: 100%;
+  min-height: 25vh;
+}
+
+.section2 H2 {
+  padding: 0 0 30px 0;
+  margin: 0 0 30px 0;
+  font-size: 3em;
+  line-height: 50px;
+  color: #ffffff;
+  font-family: "Baloo 2", sans-serif;
+}
+
+.listexperiences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.experience {
+  text-align: center;
+  margin: 10px 40px;
+}
+
+.experience h4 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 25px;
+  width: 300px;
+  height: 40px;
+}
+
+.experience p {
+  color: rgba(255, 255, 255, 0.822);
+  font-size: 18px;
+  width: 300px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 840px) {
+  .profil {
+    width: 95%;
+    padding: 0 25px 35px 25px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .profil {
+    padding: 0 45px 35px 45px;
+  }
+  .profil p {
+    line-height: 20px;
+  }
+
+  .photo {
+    max-width: 300px;
+  }
+  footer {
+      display: none;
+    }
+  .listexperiences {
+      margin: 25px 0 60px 0;
+    }
+}

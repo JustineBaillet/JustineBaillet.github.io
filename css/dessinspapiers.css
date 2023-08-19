@@ -1,0 +1,57 @@
+.bannerPapiers {
+  background-color: black;
+  background-image: url(/img_sections_créations/victoria.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+
+.listImages {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 50px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.listImages a {
+  max-width: 95%;
+}
+
+.listImages img {
+  max-width: 100%;
+  max-height: 400px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 660px) {
+  .listImages img {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .listImages img {
+    margin: 7px 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .bannerPapiers {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  footer {
+    display: none;
+  }
+
+  .listImages {
+    margin: 25px 0 100px 0;
+  }
+}

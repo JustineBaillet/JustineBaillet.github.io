@@ -1,0 +1,105 @@
+.bannerCréations {
+  background-color: black;
+  background-image: url(/banner/creations.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+
+.listCréations {
+  display: flex;
+  background-color: #fabc91;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+  padding: 45px 150px;
+  max-width: 100%;
+}
+
+.Création {
+  margin: 30px 50px;
+  max-width: 90%;
+}
+
+.Création img {
+  height: 230px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.Création:hover {
+  transform: scale(1.1);
+}
+
+.Création p {
+  background-color: white;
+  margin-top: -10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 15px 0;
+  max-width: 100%;
+}
+
+.Création a {
+  text-decoration: none;
+  color: black;
+  max-width: 95%;
+}
+
+@media screen and (max-width: 1270px) {
+  .listCréations {
+    padding: 25px 50px;
+  }
+
+  .Création {
+    margin: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .Création {
+    margin: 10px 10px;
+  }
+
+  .listCréations {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .bannerCréations {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .Création {
+    margin: 10px 0;
+    max-width: 90%;
+  }
+  .Création a {
+    margin: 0;
+    height: 10%;
+  }
+  .Création img {
+    margin: 0;
+    height: 10%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  footer {
+    display: none;
+  }
+  body {
+    background-color: #fabc91;
+  }
+  .listCréations {
+    margin: 25px 0 100px 0;
+  }
+}

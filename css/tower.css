@@ -1,0 +1,128 @@
+.bannerTower {
+  background-image: url(/banner/projets.png);
+  background-position: center;
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+
+.towerSection1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.towerP1,
+.towerP2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.1rem;
+  margin: 50px auto;
+  align-items: center;
+}
+
+.towerP1 p {
+  width: 40%;
+  text-align: justify;
+}
+
+.towerP2 p {
+  text-align: justify;
+  width: 40%;
+}
+
+.towerP1 img {
+  height: 270px;
+  margin: 0 50px ;
+}
+
+.towerP2 img {
+  height: 270px;
+  margin: 0 50px;
+}
+
+.towerSection2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: #453f7a;
+  max-width: 100%;
+  min-height: 300px;
+  padding: 50px;
+}
+
+.towerSection2 img {
+  max-width: 95%;
+  max-height: 400px;
+  margin: 10px;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 840px) {
+  .towerP1 p {
+    width: 80%;
+    margin: 0 25px 50px 25px;
+  } 
+}
+
+@media screen and (max-width: 840px) {
+ .towerP2 p {
+    width: 80%;
+    margin: 50px 30px 0 25px;
+  } 
+}
+
+@media screen and (max-width: 550px){
+  .bannerTower {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .towerSection2 {
+    padding: 10px;
+  }
+
+  .towerSection2 img {
+    max-width: 100%;
+    margin: 0;
+    }
+
+  .towerP2 img {
+    max-width: 95%;
+  }
+
+  .towerP1 {
+    margin: 30px 0;
+  }
+
+  .towerP1 p {
+    margin: 5px 0 20px 0;
+    padding: 0 50px;
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
+  .towerP2 {
+    margin: 30px 0;
+  }
+
+  .towerP2 p {
+    margin: 30px 0 0 0;
+    padding: 0 50px;
+    font-size: 1rem;
+    line-height: 23px;
+  }
+
+  footer {
+    display: none;
+  }
+  .towerSection2 {
+    margin: 0 0 50px 0;
+  }
+}

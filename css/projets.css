@@ -1,0 +1,119 @@
+.bannerProjets {
+  background-image: url(/banner/projets.png);
+  background-position: center;
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+
+.listprojets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 220px;
+  max-width: 100%;
+}
+
+.projets {
+  background-color: #fabc91;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.projet {
+  margin: 30px 50px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1310px) {
+  .projet {
+    margin: 15px 20px;
+  }
+}
+
+.projet a {
+  max-width: 100%;
+}
+
+.projet img {
+  height: 200px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.projet:hover {
+  transform: scale(1.1);
+}
+
+.projet p {
+  background-color: white;
+  margin-top: -10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px;
+  max-width: 100%;
+}
+
+.projet a {
+  text-decoration: none;
+  color: black;
+  max-width: 95%;
+}
+
+@media screen and (min-width: 2400px) {
+  .listprojets {
+    padding: 0 700px ; 
+  }
+}
+
+@media screen and (min-width: 1940px) and (max-width: 2400px) {
+  .listprojets {
+    padding: 0 450px ; 
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .listprojets {
+
+    padding: 15px 0;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .projet {
+    margin: 15px 10px;
+  }
+
+  .bannerProjets {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  footer {
+    display: none;
+  }
+
+  .listprojets {
+    margin: 0 0 100px 0;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  footer {
+    display: none;
+  }
+  body {
+    background-color: #fabc91;
+  }
+  .listprojets {
+    margin: 25px 0 100px 0;
+  }
+}

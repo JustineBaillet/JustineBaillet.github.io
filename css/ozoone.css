@@ -1,0 +1,129 @@
+.bannerOzoone {
+  background-image: url(/banner/projets.png);
+  background-position: center;
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+
+.OzooneSection1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.OzooneP1,
+.OzooneP2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.1rem;
+  margin: 50px auto;
+  align-items: center;
+}
+
+.OzooneP1 p {
+  width: 40%;
+  text-align: justify;
+}
+
+.OzooneP2 p {
+  width: 40%;
+  text-align: justify;
+}
+
+.OzooneP1 img {
+  height: 300px;
+  margin: 0 50px;
+}
+
+.OzooneP2 img {
+  height: 300px;
+  margin: 0 50px;
+}
+
+.OzooneSection2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: #453f7a;
+  max-width: 100%;
+  min-height: 300px;
+  padding: 50px;
+}
+
+.OzooneSection2 img {
+  max-width: 95%;
+  margin: 10px;
+  max-height: 450px;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 840px) {
+  .OzooneP1 p {
+    width: 80%;
+    margin: 0 25px 50px 25px;
+  } 
+}
+
+@media screen and (max-width: 840px) {
+ .OzooneP2 p {
+    width: 80%;
+    margin: 50px 30px 0 25px;
+  } 
+}
+
+@media screen and (max-width: 550px){
+  .bannerOzoone {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .OzooneSection2 {
+    padding: 10px;
+  }
+
+  .OzooneSection2 img {
+    max-width: 100%;
+    margin: 0;
+    }
+
+  .OzooneP2 img {
+    max-width: 95%;
+  }
+
+  .OzooneP1 {
+    margin: 30px 0;
+  }
+
+  .OzooneP1 p {
+    margin: 5px 0 20px 0;
+    padding: 0 50px;
+    font-size: 1rem;
+    line-height: 23px;
+  }
+
+  .OzooneP2 {
+    margin: 30px 0;
+  }
+
+  .OzooneP2 p {
+    margin: 20px 0 0 0;
+    padding: 0 50px;
+    font-size: 1rem;
+    line-height: 23px;
+  }
+
+  footer {
+    display: none;
+  }
+  .OzooneSection2 {
+    margin: 0 0 50px 0;
+  }
+
+}
