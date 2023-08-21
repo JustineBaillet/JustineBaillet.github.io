@@ -23,10 +23,17 @@
 }
 
 .listAffiches img {
-  max-height: 450px;
+  max-height: 650px;
   margin: 20px;
   max-width: 100%;
   cursor: pointer;
+}
+
+@media screen and (max-width: 2290px) {
+  .listAffiches img {
+    max-height: 550px;
+
+  }
 }
 
 @media screen and (max-width: 990px) {

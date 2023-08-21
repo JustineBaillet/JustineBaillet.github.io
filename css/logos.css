@@ -11,7 +11,7 @@
   .listLogos {
     display: flex;
     flex-wrap: wrap;
-    padding: 150px 0;
+    padding: 150px;
     justify-content: center;
     min-height: 100px;
   }
