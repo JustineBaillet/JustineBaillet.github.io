@@ -1,3 +1,4 @@
+/* ----Fichier CSS Scrollbar + Nav Bar + lightbox + Footer---- */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,8 @@ body {
   font-family: "Andika", sans-serif;
   background-color: white;
 }
+
+/* ---scrollbar--- */
 body::-webkit-scrollbar {
   width: 5px;
 }
@@ -79,8 +82,8 @@ nav ul li:hover {
   text-decoration: underline;
 }
 
-  /* ----------bannière-------- */
-  h2 {
+/* -------------------bannière----------------------- */
+h2 {
     max-width: 100%;
     text-align: center;
     line-height: 65px;
@@ -89,7 +92,9 @@ nav ul li:hover {
     max-height: 100%;
     color: #fabc91;
   }
-/* ------------modal---------------  */
+
+
+/* ----------------modal lightbox--------------------  */
 .lightbox {
   position: fixed;
   top: 0;
@@ -175,7 +180,7 @@ nav ul li:hover {
     opacity: 1;
   }
 }
-/* ------------Footer--------------- */
+/* ---------------------Footer-------------------------- */
 footer {
   width: 100%;
   min-height: 5vh;
@@ -207,6 +212,8 @@ footer {
 .footer-item img {
   height: 35px;
 }
+
+/* -------------------media screen---------------------- */
 
 @media screen and (max-width: 520px) { 
   h2 {

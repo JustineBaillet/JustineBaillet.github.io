@@ -1,3 +1,5 @@
+/* ---------Page CSS de index.html------------- */
+
 .section1 {
   text-align: center;
   display: flex;
@@ -99,7 +101,7 @@
   font-size: 18px;
   margin: 20px 0;
 }
-/* -----------------------bubble--------------------------- */
+/* -----------------------animation css bubble--------------------------- */
 
 @import url("https://fonts.googleapis.com/css?family=Exo+2:900");
 
@@ -319,7 +321,7 @@
 
 /*# sourceMappingURL=bubble.css.map */
 
-/* -------------------------------------------------- */
+/* ---------------------media screen----------------------------- */
 
 @media screen and (max-width: 840px) {
   .profil {

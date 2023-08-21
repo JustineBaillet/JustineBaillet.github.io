@@ -30,12 +30,6 @@
   max-width: 100%;
 }
 
-@media screen and (max-width: 1310px) {
-  .projet {
-    margin: 15px 20px;
-  }
-}
-
 .projet a {
   max-width: 100%;
 }
@@ -66,24 +60,41 @@
   max-width: 95%;
 }
 
-@media screen and (min-width: 2400px) {
+@media screen and (min-width: 2399px) {
   .listprojets {
-    padding: 0 700px ; 
+    padding: 50px 700px ; 
+  }
+  .projet {
+    margin: 35px 50px;
+  }
+  .bannerProjets {
+    height: 200px;
   }
 }
 
-@media screen and (min-width: 1940px) and (max-width: 2400px) {
+@media screen and (min-width: 1940px) and (max-width: 2399px) {
   .listprojets {
-    padding: 0 450px ; 
+    padding: 40px 450px ; 
+  }
+  .projet {
+    margin: 35px 50px;
+  }
+  .bannerProjets {
+    height: 190px;
   }
 }
 
 @media screen and (max-width: 1440px) {
   .listprojets {
-
-    padding: 15px 0;
+   padding: 35px 0;
   }
 
+}
+
+@media screen and (max-width: 1310px) {
+  .projet {
+    margin: 15px 20px;
+  }
 }
 
 @media screen and (max-width: 550px) {
