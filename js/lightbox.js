@@ -2,7 +2,7 @@ import { enableBodyScroll, disableBodyScroll } from "./body-scroll-lock.js";
 
 /**
  * @property {HTMLElement} element
- * @property {string[]} images chemins des images de la lightbox
+ * @property {string[]} images Chemins des images de la lightbox
  * @property {string} url Image actuellement affiché
  */
 class Lightbox {

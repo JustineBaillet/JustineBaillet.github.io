@@ -9,7 +9,7 @@ body {
   background-color: white;
 }
 
-/* ---scrollbar--- */
+/* --------Scrollbar--------- */
 body::-webkit-scrollbar {
   width: 5px;
 }
@@ -17,9 +17,11 @@ body::-webkit-scrollbar-track {
   background: rgb(255, 255, 255);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #525965; 
+  background-color: #525965;
   border-radius: 20px;
 }
+
+/* ------------Header et Nav bar------------------- */
 header {
   background-color: rgb(255, 255, 255);
   box-shadow: black 0px 0px 1px 0px;
@@ -55,7 +57,7 @@ nav a:hover {
 }
 nav img {
   height: 80%;
- padding-left: 25px ;
+  padding-left: 25px;
 }
 
 #logoNav {
@@ -86,15 +88,14 @@ nav ul li:hover {
 
 /* -------------------bannière----------------------- */
 h2 {
-    max-width: 100%;
-    text-align: center;
-    line-height: 65px;
-    font-family: "Baloo 2", sans-serif;
-    font-size: 3.5rem;
-    max-height: 100%;
-    color: #fabc91;
-  }
-
+  max-width: 100%;
+  text-align: center;
+  line-height: 65px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 3.5rem;
+  max-height: 100%;
+  color: #fabc91;
+}
 
 /* ----------------modal lightbox--------------------  */
 .lightbox {
@@ -216,26 +217,26 @@ footer {
 }
 
 /* -------------------media screen---------------------- */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 2000px) {
+  nav ul li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1000px) {
   nav img {
     padding-left: 10px;
   }
 }
-@media screen and (max-width: 520px) { 
+@media screen and (max-width: 520px) {
   h2 {
     font-size: 2.8rem;
     line-height: 50px;
   }
-  nav ul li {
-    font-size: 1.0rem;
-  }
   nav img {
     padding-left: 10px;
   }
 }
-
-@media screen and (max-width: 460px) {
-  
+@media screen and (max-width: 480px) {
   header {
     bottom: 0;
     position: fixed;
@@ -243,6 +244,9 @@ footer {
   }
   nav img {
     height: 65%;
+  }
+  nav ul {
+    padding-right: 5px;
   }
   nav ul li {
     font-size: 0.9rem;
@@ -257,8 +261,7 @@ footer {
     padding: 0;
   }
 }
-
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
   nav ul li {
     font-size: 0.8rem;
     min-width: 50px;
@@ -266,10 +269,12 @@ footer {
     line-height: 15px;
   }
 }
-
-@media screen and (max-width: 300px) { 
+@media screen and (max-width: 300px) {
   h2 {
     font-size: 2.4rem;
     line-height: 50px;
+  }
+  nav img {
+    padding-left: 4px;
   }
 }

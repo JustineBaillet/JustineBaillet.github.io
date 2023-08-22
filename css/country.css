@@ -8,13 +8,11 @@
   align-items: center;
   height: 180px;
 }
-
 .CountrySection1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .CountryP1,
 .CountryP2 {
   display: flex;
@@ -25,35 +23,28 @@
   margin: 50px auto;
   align-items: center;
 }
-
 .CountryP1 p {
   width: 40%;
   text-align: justify;
 }
-
 .CountryP1 a {
   color: black;
 }
-
 .CountryP1 a:hover {
   color: #453f7a;
 }
-
 .CountryP2 p {
   width: 40%;
   text-align: justify;
 }
-
 .CountryP1 img {
   height: 270px;
   margin: 0 50px;
 }
-
 .CountryP2 img {
   height: 270px;
   margin: 0 50px;
 }
-
 .CountrySection2 {
   display: flex;
   flex-wrap: wrap;
@@ -63,7 +54,6 @@
   min-height: 200px;
   padding: 50px 0;
 }
-
 .CountrySection2 img {
   max-width: 85%;
   max-height: 550px;
@@ -76,22 +66,17 @@
     width: 80%;
     margin: 0 25px 50px 25px;
   }
-}
-
-@media screen and (max-width: 840px) {
   .CountryP2 p {
     width: 80%;
     margin: 50px 30px 0 25px;
   }
 }
-
 @media screen and (max-width: 550px) {
   .bannerCountry {
     height: 120px;
   }
 }
-
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
   .CountrySection2 {
     padding: 15px;
     margin: 0 0 50px 0;

@@ -107,27 +107,18 @@
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
   footer {
     display: none;
   }
 
   .listprojets {
-    margin: 0 0 100px 0;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  footer {
-    display: none;
+    margin: 0 0 50px 0;
   }
   .projet:hover {
     transform: none;
   }
   body {
     background-color: #fabc91;
-  }
-  .listprojets {
-    margin: 25px 0 100px 0;
   }
 }

@@ -322,7 +322,7 @@
 
 /*# sourceMappingURL=bubble.css.map */
 
-/* ---------------------media screen----------------------------- */
+/* ---------------------Media queries----------------------------- */
 @media screen and (max-width: 1300px) {
   .experience {
   margin: 0;
@@ -357,7 +357,7 @@
   
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
   .section2 {
     padding: 20px 120px;
   }

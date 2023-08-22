@@ -29,7 +29,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 2290px) {
+@media screen and (max-width: 2200px) {
   .listAffiches img {
     max-height: 550px;
 
@@ -55,7 +55,7 @@
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
   footer {
     display: none;
   }
