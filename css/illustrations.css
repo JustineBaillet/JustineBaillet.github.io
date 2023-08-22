@@ -40,7 +40,11 @@
 .listIllustrations a {
   max-width: 100%;
 }
-
+@media screen and (max-width: 1920px){
+  .bannerIllustrations {
+    height: 170px;
+  }
+}
 @media screen and (max-width: 1550px) {
   .Illustrations {
     padding: 0;

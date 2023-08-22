@@ -63,6 +63,12 @@
   padding: 10px 0;
 }
 /* ---------------------Media queries------------------ */
+@media screen and (max-width: 1920px){
+  .bannerOzoone {
+    height: 170px;
+  }
+}
+
 @media screen and (max-width: 840px) {
   .OzooneP1 p {
     width: 80%;

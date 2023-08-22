@@ -62,7 +62,11 @@
   padding: 10px 0;
   /* margin: 10px; */
 }
-
+@media screen and (max-width: 1920px){
+  .bannerJustRead {
+    height: 170px;
+  }
+}
 @media screen and (max-width: 840px) {
   .justreadP1 p {
     width: 80%;

@@ -84,6 +84,12 @@
   }
 }
 
+@media screen and (max-width: 1920px){
+  .bannerProjets {
+    height: 170px;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .listprojets {
    padding: 35px 0;

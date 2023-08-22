@@ -28,7 +28,11 @@
   max-width: 100%;
   margin: 20px;
 }
-
+@media screen and (max-width: 1920px){
+  .bannerNumériques {
+    height: 170px;
+  }
+}
 @media screen and (max-width: 680px) {
   .listNumériques img {
     margin: 5px;

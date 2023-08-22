@@ -15,7 +15,7 @@
     margin: 50px 0px;
     justify-content: center;
     max-width: 100%;
-    padding: 0 150px;
+    padding: 0 200px;
     align-items: center;
   }
 
@@ -29,7 +29,7 @@
     max-width: 100%;
   }
 
-  @media screen and (max-width: 1445px) {
+  @media screen and (max-width: 1670px) {
     .listPhotographies {
       padding: 0;
     }

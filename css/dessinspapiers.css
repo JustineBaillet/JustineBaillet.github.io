@@ -28,7 +28,11 @@
   max-height: 400px;
   margin: 20px;
 }
-
+@media screen and (max-width: 1920px){
+  .bannerPapiers {
+    height: 170px;
+  }
+}
 @media screen and (max-width: 910px) {
   .listImages {
     padding: 0;

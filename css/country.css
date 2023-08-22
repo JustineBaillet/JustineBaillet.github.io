@@ -60,7 +60,11 @@
   padding: 10px 0;
   margin: 10px;
 }
-
+@media screen and (max-width: 1920px){
+  .bannerCountry {
+    height: 170px;
+  }
+}
 @media screen and (max-width: 840px) {
   .CountryP1 p {
     width: 80%;
