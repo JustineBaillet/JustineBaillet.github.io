@@ -57,15 +57,19 @@
     margin: 5px 0;
   }
 }
+@media screen and (max-width: 1260px) {
+  .bannerIllustrations {
+    height: 120px;
+  }
+  .ImageBureau img {
+    max-width: 85%;
+    margin: 7px 0px;
+  }
+}
 
 @media screen and (max-width: 660px) {
   .listIllustrations img {
     margin: 5px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .bannerIllustrations {
-    height: 120px;
   }
 }
 @media screen and (max-width: 500px) {

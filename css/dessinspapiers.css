@@ -33,6 +33,12 @@
     height: 170px;
   }
 }
+
+@media screen and (max-width: 1260px) {
+  .bannerPapiers {
+    height: 120px;
+  }
+}
 @media screen and (max-width: 910px) {
   .listImages {
     padding: 0;
@@ -48,12 +54,6 @@
 @media screen and (max-width: 640px) {
   .listImages img {
     margin: 7px 0px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .bannerPapiers {
-    height: 120px;
   }
 }
 

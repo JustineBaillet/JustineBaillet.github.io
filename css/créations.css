@@ -71,26 +71,20 @@
     height: 170px;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1520px) {
   .listCréations {
-    padding: 35px 0;
-  }
-}
-@media screen and (max-width: 1270px) {
-  .listCréations {
-    padding: 25px 50px;
-  }
-
-  .Création {
-    margin: 20px 30px;
-  }
-}
-@media screen and (max-width: 1270px) {
-  .listCréations {
-    padding: 25px 20px;
+    padding: 10px 0;
   }
   .Création {
-    margin: 20px 20px;
+    margin: 10px 10px;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .Création {
+    margin: 5px 10px;
+  }
+  .bannerCréations {
+    height: 120px;
   }
 }
 @media screen and (max-width: 940px) {
@@ -102,11 +96,7 @@
     padding: 10px 0;
   }
 }
-@media screen and (max-width: 550px) {
-  .bannerCréations {
-    height: 120px;
-  }
-}
+
 @media screen and (max-width: 480px) {
   footer {
     display: none;

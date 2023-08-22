@@ -35,6 +35,12 @@
     }
   }
 
+  @media screen and (max-width: 1260px) {
+    .bannerPhotographies {
+      height: 120px;
+    }
+  }
+
   @media screen and (max-width: 680px) {
     .listPhotographies img {
       margin: 5px;
@@ -44,12 +50,6 @@
   @media screen and (max-width: 475px) {
     .listPhotographies img {
       margin: 5px 0;
-    }
-  }
-
-  @media screen and (max-width: 550px){
-    .bannerPhotographies {
-      height: 120px;
     }
   }
 

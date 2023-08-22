@@ -33,6 +33,11 @@
     height: 170px;
   }
 }
+@media screen and (max-width: 1260px) {
+  .bannerNumériques {
+    height: 120px;
+  }
+}
 @media screen and (max-width: 680px) {
   .listNumériques img {
     margin: 5px;
@@ -44,13 +49,6 @@
     margin: 5px 0;
   }
 }
-
-@media screen and (max-width: 550px) {
-  .bannerNumériques {
-    height: 120px;
-  }
-}
-
 @media screen and (max-width: 480px) {
   footer {
     display: none;

@@ -332,6 +332,13 @@
     font-size: 15px;
   }
 }
+@media screen and (max-width: 1260px) {
+  .photo{
+    width: 350px;
+  }
+}
+
+
 @media screen and (max-width: 900px) {
   .experience {
     margin: 10px 0;

@@ -68,7 +68,11 @@
     height: 170px;
   }
 }
-
+@media screen and (max-width: 1260px) {
+  .bannerOzoone {
+    height: 120px;
+  }
+}
 @media screen and (max-width: 840px) {
   .OzooneP1 p {
     width: 80%;
@@ -79,11 +83,7 @@
     margin: 50px 30px 0 25px;
   }
 }
-@media screen and (max-width: 550px) {
-  .bannerOzoone {
-    height: 120px;
-  }
-}
+
 @media screen and (max-width: 480px) {
   .OzooneP1 {
     margin: 30px 0;

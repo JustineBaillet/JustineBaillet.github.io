@@ -39,8 +39,17 @@
   .bannerAffiches {
     height: 170px;
   }
+}
+@media screen and (max-width: 1260px) {
+  .bannerAffiches {
+    height: 120px;
+  }
   .listAffiches img {
-    max-height: 500px;
+    max-height: 400px;
+  }
+  .listAffiches {
+    padding: 0;
+    margin: 15px 0;
   }
 }
 @media screen and (max-width: 990px) {
@@ -52,16 +61,9 @@
 
 @media screen and (max-width: 700px) {
   .listAffiches img {
-    margin: 5px 0;
+    margin: 5px 2px;
   }
 }
-
-@media screen and (max-width: 550px) {
-  .bannerAffiches {
-    height: 120px;
-  }
-}
-
 @media screen and (max-width: 480px) {
   footer {
     display: none;

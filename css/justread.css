@@ -67,6 +67,12 @@
     height: 170px;
   }
 }
+
+@media screen and (max-width: 1260px) {
+  .bannerJustRead {
+    height: 120px;
+  }
+}
 @media screen and (max-width: 840px) {
   .justreadP1 p {
     width: 80%;
@@ -79,12 +85,6 @@
     width: 80%;
     margin: 50px 30px 0 25px;
   } 
-}
-
-@media screen and (max-width: 550px){
-  .bannerJustRead {
-    height: 120px;
-  }
 }
 
 @media screen and (max-width: 480px) {
