@@ -37,7 +37,7 @@
   color: #453f7a;
   text-decoration: underline;
 }
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1300px) {
   .bannerContact {
     height: 120px;
   }

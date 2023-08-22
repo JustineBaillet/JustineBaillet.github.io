@@ -35,7 +35,7 @@
     }
   }
 
-  @media screen and (max-width: 1260px) {
+  @media screen and (max-width: 1300px) {
     .bannerPhotographies {
       height: 120px;
     }

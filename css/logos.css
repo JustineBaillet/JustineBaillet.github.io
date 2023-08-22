@@ -26,7 +26,7 @@
       height: 170px;
     }
   }
-  @media screen and (max-width: 1260px) {
+  @media screen and (max-width: 1300px) {
     .bannerLogos {
       height: 120px;
     }

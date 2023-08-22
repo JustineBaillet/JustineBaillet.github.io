@@ -332,7 +332,7 @@
     font-size: 15px;
   }
 }
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1300px) {
   .photo{
     width: 350px;
   }
