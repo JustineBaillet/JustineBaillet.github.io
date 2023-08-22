@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 1440px) {
   .listprojets {
-   padding: 35px 0;
+   padding: 15px 0;
   }
 
 }
@@ -103,21 +103,22 @@
   }
 }
 
-@media screen and (max-width: 550px) {
-  .projet {
-    margin: 15px 10px;
-  }
-
+@media screen and (max-width: 1260px) {
   .bannerProjets {
     height: 120px;
   }
 }
 
+@media screen and (max-width: 550px) {
+  .projet {
+    margin: 15px 10px;
+  }
+
+}
 @media screen and (max-width: 480px) {
   footer {
     display: none;
   }
-
   .listprojets {
     margin: 0 0 50px 0;
   }
