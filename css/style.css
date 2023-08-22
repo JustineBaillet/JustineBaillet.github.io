@@ -222,6 +222,17 @@ footer {
     font-size: 0.9rem;
   }
 }
+@media screen and (max-width: 1260px) {
+  header {
+    height: 11vh;
+  }
+  .footer-item img {
+    height: 25px;
+  }
+}
+.footer-item {
+  padding: 0;
+}
 @media screen and (max-width: 1000px) {
   nav img {
     padding-left: 10px;
