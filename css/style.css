@@ -67,11 +67,11 @@ nav ul {
   justify-content: flex-end;
   align-items: center;
   list-style: none;
-  max-width: 40%;
   padding-right: 20px;
+  line-height: 18px;
 }
 nav ul li {
-  min-width: 120px;
+  margin-left: 20px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -216,11 +216,21 @@ footer {
 }
 
 /* -------------------media screen---------------------- */
-
+@media screen and (max-width: 1000px){
+  nav img {
+    padding-left: 10px;
+  }
+}
 @media screen and (max-width: 520px) { 
   h2 {
     font-size: 2.8rem;
     line-height: 50px;
+  }
+  nav ul li {
+    font-size: 1.0rem;
+  }
+  nav img {
+    padding-left: 10px;
   }
 }
 
@@ -230,11 +240,8 @@ footer {
     bottom: 0;
     position: fixed;
     top: auto;
-    height: 7vh;
-    
   }
   nav img {
-    padding-left: 0;
     height: 65%;
   }
   nav ul li {
@@ -256,9 +263,7 @@ footer {
     font-size: 0.8rem;
     min-width: 50px;
     margin: 0 3px;
-  }
-  nav {
-    padding: 0 8px;
+    line-height: 15px;
   }
 }
 
