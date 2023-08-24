@@ -13,7 +13,7 @@
 .profil {
   padding: 50px;
   width: 40%;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   text-align: justify;
 }
 
@@ -331,7 +331,11 @@
   .experience h4 span {
     font-size: 15px;
   }
+  .profil {
+    font-size: 1.1em;
+  }
 }
+
 @media screen and (max-width: 1300px) {
   .photo{
     width: 350px;

@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-height: 700px;
+  min-height: 600px;
   max-width: 100%;
 }
 .Création {
@@ -76,15 +76,19 @@
     padding: 10px 0;
   }
   .Création {
-    margin: 10px 10px;
+    margin: 25px 15px;
   }
 }
 @media screen and (max-width: 1300px) {
   .Création {
-    margin: 5px 10px;
+    margin: 5px 15px;
   }
   .bannerCréations {
     height: 120px;
+  }
+  .Création img {
+    height: 200px;
+    width: 350px;
   }
 }
 @media screen and (max-width: 940px) {
@@ -109,5 +113,9 @@
   }
   .listCréations {
     margin: 5px 0 50px 0;
+  }
+  .Création img {
+    height: 180px;
+    width: 300px;
   }
 }

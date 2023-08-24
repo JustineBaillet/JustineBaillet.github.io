@@ -88,30 +88,41 @@
   .bannerProjets {
     height: 170px;
   }
+  .listprojets {
+    padding: 15px 200px ; 
+  }
 }
 
 @media screen and (max-width: 1440px) {
   .listprojets {
-   padding: 15px 0;
+   padding: 15px 80px;
   }
 
-}
-
-@media screen and (max-width: 1310px) {
-  .projet {
-    margin: 15px 20px;
-  }
 }
 
 @media screen and (max-width: 1300px) {
   .bannerProjets {
     height: 120px;
   }
+  .projet {
+    margin: 15px 20px;
+  }
+  .projet img {
+    height: 200px;
+    width: 350px;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .projet {
     margin: 15px 10px;
+  }
+  .listprojets {
+    padding: 15px 0px;
+   }
+   .projet img {
+    height: 180px;
+    width: 300px;
   }
 
 }
@@ -122,6 +133,8 @@
   .listprojets {
     margin: 0 0 50px 0;
   }
+
+  
   .projet:hover {
     transform: none;
   }
