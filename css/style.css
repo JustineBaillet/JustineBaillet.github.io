@@ -274,7 +274,7 @@ footer {
   }
   #icons {
     display: block;
-    padding-right: 15px;
+    padding-right: 20px;
   }
   #icons:before {
     content: "\2630";
@@ -287,7 +287,7 @@ footer {
     position: fixed;
     right: -100%;
     bottom: 6%;
-    padding: 8px 0 15px 20px;
+    padding: 8px 0 35px 20px;
     flex-direction: column;
     background: rgb(255, 255, 255);
     text-align: center;
@@ -311,9 +311,6 @@ footer {
   .lightbox {
     display: none;
   }
-  :focus {
-    outline: none;
-}
 }
 
 @media screen and (max-width: 300px) {
