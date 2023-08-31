@@ -270,7 +270,7 @@ footer {
   }
   #icons {
     display: block;
-    padding-right: 20px;
+    padding-right: 25px;
   }
   #icons:before {
     content: "\2630";
