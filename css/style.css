@@ -256,6 +256,10 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
   header {
     bottom: 0;
     position: fixed;
@@ -270,6 +274,7 @@ footer {
   }
   #icons {
     display: block;
+    -webkit-tap-highlight-color: transparent;
     padding-right: 25px;
   }
   #icons:before {

@@ -17,7 +17,7 @@
 }
 
 .profil p {
-  line-height: 23px;
+  line-height: 25px;
 }
 
 .profil a {
@@ -322,7 +322,11 @@
 }
 
 /* ---------------------Media queries----------------------------- */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 2000px) {
+  .profil p {
+    font-size: 0.9em;
+  }
+}@media screen and (max-width: 1300px) {
   .experience {
     margin: 0;
     width: 300px;
