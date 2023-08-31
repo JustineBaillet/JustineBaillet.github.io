@@ -62,7 +62,7 @@
   padding: 10px 0;
   /* margin: 10px; */
 }
-@media screen and (max-width: 1920px){
+@media screen and (max-width: 1920px) {
   .bannerJustRead {
     height: 170px;
   }
@@ -77,17 +77,25 @@
   .justreadP1 p {
     width: 80%;
     margin: 0 25px 50px 25px;
-  } 
+  }
 }
 
 @media screen and (max-width: 840px) {
- .justreadP2 p {
+  .justreadP2 p {
     width: 80%;
     margin: 50px 30px 0 25px;
-  } 
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .justreadP1 p,
+  .justreadP1 img {
+    animation: none;
+  }
+  .justreadP2 p,
+  .justreadP2 img {
+    animation: none;
+  }
   .justreadSection2 {
     padding: 15px;
   }
@@ -95,7 +103,7 @@
   .justreadSection2 img {
     max-width: 100%;
     margin: 0;
-    }
+  }
 
   .justreadP2 img {
     max-width: 95%;

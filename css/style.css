@@ -261,10 +261,6 @@ footer {
     position: fixed;
     top: auto;
   }
-  nav ul li {
-    padding: 10px 0;
-    list-style: disc;
-  }
   footer {
     margin: 0 0 65px 0;
     padding: 0;
@@ -289,10 +285,16 @@ footer {
     bottom: 6%;
     padding: 8px 0 35px 20px;
     flex-direction: column;
+    border-radius: 5px 0 0 0 ;
+    box-shadow: black 0 0 1px 0;
     background: rgb(255, 255, 255);
     text-align: center;
     transition: 0.25s;
     z-index: -1;
+  }
+  nav ul li {
+    padding: 10px 0;
+    list-style: disc;
   }
   nav li:hover {
     background: #5663af2a;

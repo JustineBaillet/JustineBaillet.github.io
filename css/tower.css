@@ -38,7 +38,7 @@
 
 .towerP1 img {
   height: 270px;
-  margin: 0 50px ;
+  margin: 0 50px;
 }
 
 .towerP2 img {
@@ -62,7 +62,7 @@
   margin: 10px;
   padding: 10px 0;
 }
-@media screen and (max-width: 1920px){
+@media screen and (max-width: 1920px) {
   .bannerTower {
     height: 170px;
   }
@@ -77,15 +77,23 @@
   .towerP1 p {
     width: 80%;
     margin: 0 25px 50px 25px;
-  } 
+  }
 }
 @media screen and (max-width: 840px) {
- .towerP2 p {
+  .towerP2 p {
     width: 80%;
     margin: 50px 30px 0 25px;
-  } 
+  }
 }
 @media screen and (max-width: 480px) {
+  .towerP1 p,
+  .towerP1 img {
+    animation: none;
+  }
+  .towerP2 p,
+  .towerP2 img {
+    animation: none;
+  }
   .towerSection2 {
     padding: 10px;
   }
@@ -93,7 +101,7 @@
   .towerSection2 img {
     max-width: 100%;
     margin: 0;
-    }
+  }
 
   .towerP2 img {
     max-width: 95%;

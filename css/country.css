@@ -60,7 +60,7 @@
   padding: 10px 0;
   margin: 10px;
 }
-@media screen and (max-width: 1920px){
+@media screen and (max-width: 1920px) {
   .bannerCountry {
     height: 170px;
   }
@@ -81,6 +81,14 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .CountryP1 p,
+  .CountryP1 img {
+    animation: none;
+  }
+  .CountryP2 p,
+  .CountryP2 img {
+    animation: none;
+  }
   .CountrySection2 {
     padding: 15px;
     margin: 0 0 50px 0;

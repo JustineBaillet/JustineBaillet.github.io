@@ -85,6 +85,15 @@
 }
 
 @media screen and (max-width: 480px) {
+  .OzooneP1 p,
+  .OzooneP1 img {
+    animation: none;
+  }
+  .OzooneP2 p,
+  .OzooneP2 img {
+    animation: none;
+  }
+  
   .OzooneP1 {
     margin: 30px 0;
   }
@@ -116,5 +125,6 @@
   }
   footer {
     display: none;
+    animation: none;
   }
 }
