@@ -7,7 +7,6 @@
   margin: 50px 0;
   justify-content: center;
   align-items: center;
-  /* min-height: 400px; */
   min-height: 41vh;
 }
 .profil {
@@ -111,7 +110,8 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  background-image: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%), url(https://images.unsplash.com/photo-1502726299822-6f583f972e02);
+  background-image: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%),
+    url(https://images.unsplash.com/photo-1502726299822-6f583f972e02);
   background-blend-mode: multiply;
   background-size: cover;
   overflow: hidden;
@@ -311,7 +311,8 @@
   0% {
     opacity: 0;
   }
-  10%, 90% {
+  10%,
+  90% {
     opacity: 1;
   }
   100% {
@@ -320,13 +321,11 @@
   }
 }
 
-/*# sourceMappingURL=bubble.css.map */
-
 /* ---------------------Media queries----------------------------- */
 @media screen and (max-width: 1300px) {
   .experience {
-  margin: 0;
-  width: 300px;
+    margin: 0;
+    width: 300px;
   }
   .experience h4 span {
     font-size: 15px;
@@ -337,16 +336,14 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .photo{
+  .photo {
     width: 350px;
   }
 }
 
-
 @media screen and (max-width: 900px) {
   .experience {
     margin: 10px 0;
-    
   }
   .experience p {
     margin: 2px 0;
@@ -358,21 +355,19 @@
   }
 }
 
-
 @media screen and (max-width: 840px) {
   .profil {
     width: 95%;
     padding: 0 25px 35px 25px;
     font-size: 1.1rem;
   }
-  
 }
 
 @media screen and (max-width: 480px) {
   .section2 {
     padding: 20px 120px;
   }
-  
+
   .section2 H2 {
     padding: 0 0 20px 0;
     margin: 0;
@@ -388,9 +383,16 @@
     max-width: 300px;
   }
   footer {
-      display: none;
-    }
+    display: none;
+  }
   .listexperiences {
-      margin: 0 0 60px 0;
-    }
+    margin: 0 0 60px 0;
+  }
+  .experience h4 {
+    height: 50px;
+  }
+
+  #snps {
+    margin-bottom: 8px;
+  }
 }

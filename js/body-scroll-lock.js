@@ -181,12 +181,13 @@ export const disableBodyScroll = (targetElement, options) => {
 
   locks = [...locks, lock];
 
-  if (isIosDevice) {
-    setPositionFixed();
-  } else {
-    setOverflowHidden(options);
+  if (window.innerWidth >= 480) {
+    if (isIosDevice) {
+        setPositionFixed();
+    } else {
+        setOverflowHidden(options);
+    }
   }
-
   if (isIosDevice) {
     targetElement.ontouchstart = event => {
       if (event.targetTouches.length === 1) {
@@ -243,13 +244,15 @@ export const enableBodyScroll = targetElement => {
 
   locks = locks.filter(lock => lock.targetElement !== targetElement);
 
-  if (isIosDevice) {
-    targetElement.ontouchstart = null;
-    targetElement.ontouchmove = null;
+  if (window.innerWidth >= 480) {
+    if (isIosDevice) {
+      targetElement.ontouchstart = null;
+      targetElement.ontouchmove = null;
 
-    if (documentListenerAdded && locks.length === 0) {
-      document.removeEventListener('touchmove', preventDefault, hasPassiveEvents ? { passive: false } : undefined);
-      documentListenerAdded = false;
+      if (documentListenerAdded && locks.length === 0) {
+        document.removeEventListener('touchmove', preventDefault, hasPassiveEvents ? { passive: false } : undefined);
+        documentListenerAdded = false;
+      }
     }
   }
 

@@ -1,5 +1,6 @@
 import { enableBodyScroll, disableBodyScroll } from "./body-scroll-lock.js";
 
+// ----------------------Lightbox------------------------------------------------
 /**
  * @property {HTMLElement} element
  * @property {string[]} images Chemins des images de la lightbox
@@ -27,6 +28,10 @@ class Lightbox {
    */
 
   constructor(url, images) {
+    if (activeLightbox) {
+      activeLightbox.close();
+    }
+    
     this.element = this.buildDOM(url);
     this.images = images;
     this.loadImage(url);
@@ -34,6 +39,8 @@ class Lightbox {
     document.body.appendChild(this.element);
     disableBodyScroll(this.element);
     document.addEventListener("keyup", this.onKeyUp);
+
+    activeLightbox = this;
   }
 
   /**
@@ -72,13 +79,13 @@ class Lightbox {
    * @param {MouseEvent|KeyboardEvent} e
    */
   close(e) {
-    e.preventDefault();
     this.element.classList.add("fadeOut");
     enableBodyScroll(this.element);
     window.setTimeout(() => {
       this.element.parentElement.removeChild(this.element);
     }, 500);
     document.removeEventListener("keyup", this.onKeyUp);
+    activeLightbox = null;
   }
 
   /**
@@ -130,5 +137,5 @@ class Lightbox {
     return dom;
   }
 }
-
+let activeLightbox = null;
 Lightbox.init();

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,16 +14,20 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/accueil.css">
   <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="/js/script.js" defer></script>
 </head>
 <body>
   <header>
-    <nav>
+    <nav id="nav">
+      <div class="Logo">
       <a href="/index.html"><img src="/logos/LogoJB.png" alt="LogoJB" /></a>
+    </div>
       <ul>
         <a href="/html/projets.html"><li>Projets UX/UI</li></a>
         <a href="/html/créations.html"><li>Créations</li></a>
         <a href="/html/contact.html"><li>Contact</li></a>
       </ul>
+      <div id="icons"></div>
     </nav>
   </header>
   <main>
@@ -58,7 +61,7 @@
           <h2>Mes expériences</h2>
           <div class="listexperiences">       
             <div class="experience">
-              <h4>SNPS <br><span>(Service National de Police Scientifique)</span></h4>
+              <h4 id="snps">SNPS <br><span>(Service National de Police Scientifique)</span></h4>
               <p class="descritption">Graphiste <br>(Alternance)</p>
               <p class="date">Septembre 2022 - Aout 2023</p>
             </div>    

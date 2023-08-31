@@ -44,46 +44,52 @@ nav {
   height: 100%;
   overflow: hidden;
   width: 100%;
+  align-items: center;
 }
-nav a {
+nav ul a {
   text-decoration: none;
   color: black;
   display: flex;
   align-items: center;
-  height: 100%;
 }
 nav a:hover {
   color: #5664af;
 }
-nav img {
-  height: 80%;
-  padding-left: 25px;
-}
 
-#logoNav {
-  max-height: 100%;
-  max-width: 100%;
-}
 nav ul {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   list-style: none;
   padding-right: 20px;
   line-height: 18px;
 }
 nav ul li {
-  margin-left: 25px;
+  margin: 0 15px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.1rem;
 }
 nav ul li:hover {
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   transition-duration: 0.2s;
   color: #5664af;
   text-decoration: underline;
+}
+.Logo {
+  display: block;
+  max-height: 100%;
+}
+
+.Logo img {
+  max-height: 65px;
+  padding-left: 25px;
+  display: block;
+}
+
+#icons {
+  cursor: pointer;
+  display: none;
 }
 
 /* -------------------bannière----------------------- */
@@ -226,6 +232,9 @@ footer {
   header {
     height: 65px;
   }
+  .Logo img {
+    max-height: 55px;
+  }
   .footer-item img {
     height: 25px;
   }
@@ -233,18 +242,15 @@ footer {
 .footer-item {
   padding: 0;
 }
-@media screen and (max-width: 1000px) {
-  nav img {
-    padding-left: 10px;
+@media screen and (max-width: 800px) {
+  .Logo img {
+    padding-left: 15px;
   }
 }
 @media screen and (max-width: 520px) {
   h2 {
     font-size: 2.8rem;
     line-height: 50px;
-  }
-  nav img {
-    padding-left: 10px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -253,15 +259,10 @@ footer {
     position: fixed;
     top: auto;
   }
-  nav img {
-    height: 65%;
-  }
-  nav ul {
-    padding-right: 5px;
-  }
+
   nav ul li {
-    margin: 0 4px;
-    min-width: 80px;
+    padding: 10px 0;
+    list-style: disc;
   }
   footer {
     margin: 0 0 65px 0;
@@ -270,16 +271,53 @@ footer {
   .footer-links a {
     padding: 0;
   }
+  #icons {
+    display: block;
+    padding-right: 15px;
+  }
+  #icons:before {
+    content: "\2630";
+    font-size: 20px; /*Taille de l'icône*/
+  }
+  .active #icons:before {
+    content: "\2715";
+  }
+  nav ul {
+    position: fixed;
+    right: -100%;
+    bottom: 7%;
+    padding: 8px 0 8px 20px;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    transition: 0.25s;
+    z-index: -1;
+  }
+  nav li:hover {
+    background: #5663af2a;
+  }
+  nav.active ul {
+    right: 0;
+  }
+  nav ul li:hover {
+    letter-spacing: normal;
+  }
+  .Logo img {
+    max-height: 45px;
+    padding-left: 10px;
+  }
+
+  .lightbox {
+    display: none;
+  }
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 300px) {
   nav ul li {
     font-size: 0.8rem;
     min-width: 50px;
     margin: 0 3px;
     line-height: 15px;
   }
-}
-@media screen and (max-width: 300px) {
   h2 {
     font-size: 2.4rem;
     line-height: 50px;
