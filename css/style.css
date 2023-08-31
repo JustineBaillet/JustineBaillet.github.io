@@ -279,7 +279,7 @@ footer {
   }
   #icons:before {
     content: "\2630";
-    font-size: 25px; /*Taille de l'icône*/
+    font-size: 28px; /*Taille de l'icône*/
   }
   .active #icons:before {
     content: "\2715";
@@ -312,7 +312,7 @@ footer {
   }
   .Logo img {
     max-height: 45px;
-    padding-left: 10px;
+    padding-left: 15px;
   }
 
   .lightbox {
