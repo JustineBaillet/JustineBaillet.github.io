@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   /* border: 1px solid rgb(111, 211, 211); */
+  
 }
 body {
   font-family: "Andika", sans-serif;
@@ -31,11 +32,9 @@ header {
   top: 0;
   z-index: 100;
 }
-
 main {
   max-width: 100%;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -80,13 +79,11 @@ nav ul li:hover {
   display: block;
   max-height: 100%;
 }
-
 .Logo img {
   max-height: 65px;
   padding-left: 25px;
   display: block;
 }
-
 #icons {
   cursor: pointer;
   display: none;
@@ -189,6 +186,7 @@ h2 {
     opacity: 1;
   }
 }
+
 /* ---------------------Footer-------------------------- */
 footer {
   width: 100%;
@@ -228,6 +226,7 @@ footer {
     font-size: 0.9rem;
   }
 }
+
 @media screen and (max-width: 1260px) {
   header {
     height: 65px;
@@ -242,24 +241,26 @@ footer {
 .footer-item {
   padding: 0;
 }
+
 @media screen and (max-width: 800px) {
   .Logo img {
     padding-left: 15px;
   }
 }
+
 @media screen and (max-width: 520px) {
   h2 {
     font-size: 2.8rem;
     line-height: 50px;
   }
 }
+
 @media screen and (max-width: 480px) {
   header {
     bottom: 0;
     position: fixed;
     top: auto;
   }
-
   nav ul li {
     padding: 10px 0;
     list-style: disc;
@@ -277,7 +278,7 @@ footer {
   }
   #icons:before {
     content: "\2630";
-    font-size: 20px; /*Taille de l'icône*/
+    font-size: 25px; /*Taille de l'icône*/
   }
   .active #icons:before {
     content: "\2715";
@@ -285,8 +286,8 @@ footer {
   nav ul {
     position: fixed;
     right: -100%;
-    bottom: 7%;
-    padding: 8px 0 8px 20px;
+    bottom: 6%;
+    padding: 8px 0 15px 20px;
     flex-direction: column;
     background: rgb(255, 255, 255);
     text-align: center;
@@ -310,7 +311,11 @@ footer {
   .lightbox {
     display: none;
   }
+  :focus {
+    outline: none;
 }
+}
+
 @media screen and (max-width: 300px) {
   nav ul li {
     font-size: 0.8rem;
