@@ -82,6 +82,7 @@
   text-align: center;
   margin: 10px 40px;
   width: 350px;
+  z-index: 1;
 }
 
 .experience h4 {
@@ -326,7 +327,8 @@
   .profil p {
     font-size: 0.9em;
   }
-}@media screen and (max-width: 1300px) {
+}
+@media screen and (max-width: 1300px) {
   .experience {
     margin: 0;
     width: 300px;
