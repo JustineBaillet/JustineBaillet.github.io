@@ -25,6 +25,13 @@
   width: 40%;
   text-align: justify;
 }
+.justreadP2 a {
+  color: black;
+}
+
+.justreadP2 a:hover {
+  color: #0b5548;
+}
 
 .justreadP1 img {
   height: 270px;

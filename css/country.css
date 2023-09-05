@@ -18,12 +18,18 @@
   width: 40%;
   text-align: justify;
 }
-.CountryP1 a {
+.CountryP1 a,
+.CountryP2 a {
   color: black;
 }
 .CountryP1 a:hover {
-  color: #453f7a;
+  color: #0b5548;
 }
+
+.CountryP2 a:hover {
+  color: #0b5548;
+}
+
 .CountryP2 p {
   width: 40%;
   text-align: justify;

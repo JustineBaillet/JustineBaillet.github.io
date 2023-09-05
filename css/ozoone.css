@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   margin: 50px auto;
   align-items: center;
 }
@@ -23,6 +23,14 @@
 .OzooneP2 p {
   width: 40%;
   text-align: justify;
+}
+
+.OzooneP2 a {
+  color: black;
+}
+
+.OzooneP2 a:hover {
+  color: #0b5548;
 }
 
 .OzooneP1 img {
