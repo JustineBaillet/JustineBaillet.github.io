@@ -286,7 +286,6 @@ footer {
   a {
     -webkit-tap-highlight-color: transparent;
   }
-  
   header {
     bottom: 0;
     position: fixed;
@@ -295,7 +294,6 @@ footer {
   nav {
     box-shadow: 1px 0px 5px 0px rgb(72 88 100 / 20%);
   }
- 
   #icons {
     display: block;
     -webkit-tap-highlight-color: transparent;
@@ -339,12 +337,10 @@ footer {
     max-height: 45px;
     padding-left: 15px;
   }
-
   .lightbox {
     display: none;
   }
 }
-
 @media screen and (max-width: 300px) {
   nav ul li {
     font-size: 0.8rem;

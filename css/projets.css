@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 2100px) {
   .listprojets { 
-    padding: 40px 300px;
+    padding: 55px 300px;
   }
 }
 
@@ -60,7 +60,7 @@
     margin: 20px 50px;}
     
     .listprojets { 
-    padding: 30px 220px;
+    padding: 50px 220px;
   }
 }
 
