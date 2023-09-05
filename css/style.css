@@ -191,7 +191,7 @@ h2 {
 /* ---------------------Footer-------------------------- */
 footer {
   width: 100%;
-  min-height: 50px;
+  min-height: 40px;
   bottom: 0;
   padding: 10px 0;
   background-color:black;
@@ -206,7 +206,7 @@ footer {
 }
 
 .footer_links a {
-  max-height: 90px;
+  max-height: 70px;
   width: auto;
 }
 .footer1 {
@@ -220,7 +220,7 @@ footer {
 }
 
 .footer_item img {
-  height: 70px;
+  height: 55px;
 }
 
 .footer2 {
@@ -229,7 +229,7 @@ footer {
   height: 100%;
 }
 .footer_logo img {
-  height: 90px;
+  height: 70px;
 }
 
 /* -------------------media screen---------------------- */

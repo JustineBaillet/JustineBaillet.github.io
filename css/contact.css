@@ -1,6 +1,6 @@
 .Contact {
   display: flex;
-  padding: 130px 300px;
+  padding: 150px 300px;
 }
 .infosContact {
   padding: 0 100px 
@@ -22,7 +22,7 @@
   width: 100%;
 }
 .listContact a {
-  width: 120px;
+  width: 110px;
 }
 .logoContact {
   text-decoration: none;
@@ -56,6 +56,9 @@
   .listContact {
     margin: 60px 0 0 0 ;
   }
+  .listContact a {
+    width: 100px;
+  }
 }
 
 @media screen and (max-width: 1880px) {
@@ -69,9 +72,6 @@
   .TexteContact { 
     padding: 0 90px;
     font-size: 1.2em;
-  }
-  .listContact a {
-    width: 100px;
   }
 }
 
