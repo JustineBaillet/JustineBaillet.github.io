@@ -10,15 +10,16 @@
   min-height: 41vh;
 }
 .profil {
-  padding: 50px;
+  padding: 50px 70px;
   width: 40%;
-  font-size: 1.2em;
+  margin: 0  15px;
+  font-size: 1.3em;
   text-align: justify;
 
 }
 
 .profil p {
-  line-height: 25px;
+  line-height: 30px;
 }
 
 .profil a {
@@ -327,7 +328,13 @@
 @media screen and (max-width: 2000px) {
   .profil p {
     font-size: 0.9em;
+    line-height: 25px;
   }
+  .profil {
+    font-size: 1.2em;
+    padding: 50px;
+  }
+
 }
 @media screen and (max-width: 1300px) {
   .experience {
