@@ -1,13 +1,4 @@
-.bannerLogos {
-    background-color: black;
-    background-image: url(/img_sections_créations/logo.png);
-    background-position: center ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 180px;
-  }
-  
+
   .listLogos {
     display: flex;
     flex-wrap: wrap;
@@ -21,15 +12,7 @@
     margin: 20px;
     max-width: 100%;
   }
-  @media screen and (max-width: 1920px){
-    .bannerLogos {
-      height: 170px;
-    }
-  }
   @media screen and (max-width: 1300px) {
-    .bannerLogos {
-      height: 120px;
-    }
     .listLogos {
       padding: 40px;
     }

@@ -1,13 +1,4 @@
-.bannerCountry {
-  background-image: url(/banner/projets.png);
-  background-position: center;
-  background-color: black;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 180px;
-}
+
 .CountrySection1 {
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background: #453f7a;
+  background: #e7eeed;
   max-width: 100%;
   min-height: 200px;
   padding: 50px 0;
@@ -57,18 +48,9 @@
 .CountrySection2 img {
   max-width: 85%;
   max-height: 550px;
-  padding: 10px 0;
+  border-radius: 20px;
+  box-shadow: 14px 14px 20px 0px #9c9c9c;
   margin: 10px;
-}
-@media screen and (max-width: 1920px) {
-  .bannerCountry {
-    height: 170px;
-  }
-}
-@media screen and (max-width: 1300px) {
-  .bannerCountry {
-    height: 120px;
-  }
 }
 @media screen and (max-width: 840px) {
   .CountryP1 p {

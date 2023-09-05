@@ -1,13 +1,3 @@
-.bannerNumériques {
-  background-color: black;
-  background-image: url(/img_sections_créations/tablette.png);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 180px;
-}
 
 .listNumériques {
   display: flex;
@@ -27,16 +17,6 @@
   max-height: 450px;
   max-width: 100%;
   margin: 20px;
-}
-@media screen and (max-width: 1920px){
-  .bannerNumériques {
-    height: 170px;
-  }
-}
-@media screen and (max-width: 1300px) {
-  .bannerNumériques {
-    height: 120px;
-  }
 }
 @media screen and (max-width: 680px) {
   .listNumériques img {

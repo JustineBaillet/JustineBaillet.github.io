@@ -1,13 +1,3 @@
-.bannerIllustrations {
-  background-color: black;
-  background-image: url(/img_sections_créations/illustrations.png);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 180px;
-}
 
 .Illustrations {
   display: flex;
@@ -40,11 +30,6 @@
 .listIllustrations a {
   max-width: 100%;
 }
-@media screen and (max-width: 1920px){
-  .bannerIllustrations {
-    height: 170px;
-  }
-}
 @media screen and (max-width: 1550px) {
   .Illustrations {
     padding: 0;
@@ -58,9 +43,6 @@
   }
 }
 @media screen and (max-width: 1300px) {
-  .bannerIllustrations {
-    height: 120px;
-  }
   .ImageBureau img {
     max-width: 85%;
     margin: 7px 0px;
@@ -86,9 +68,7 @@
   footer {
     display: none;
   }
-
   .listIllustrations {
     margin: 25px 0 100px 0;
-
   }
 }

@@ -1,13 +1,3 @@
-.bannerAffiches {
-  background-color: black;
-  background-image: url(/img_sections_créations/affiche.png);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 180px;
-}
 
 .listAffiches {
   display: flex;
@@ -35,15 +25,7 @@
 
   }
 }
-@media screen and (max-width: 1920px){
-  .bannerAffiches {
-    height: 170px;
-  }
-}
 @media screen and (max-width: 1300px) {
-  .bannerAffiches {
-    height: 120px;
-  }
   .listAffiches img {
     max-height: 400px;
   }

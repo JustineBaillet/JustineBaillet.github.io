@@ -1,14 +1,3 @@
-.bannerOzoone {
-  background-image: url(/banner/projets.png);
-  background-position: center;
-  background-color: black;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 180px;
-}
-
 .OzooneSection1 {
   display: flex;
   flex-wrap: wrap;
@@ -50,7 +39,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background: #453f7a;
+  background: #e7eeed;
   max-width: 100%;
   min-height: 300px;
   padding: 50px;
@@ -60,19 +49,10 @@
   max-width: 95%;
   margin: 10px;
   max-height: 450px;
-  padding: 10px 0;
+  border-radius: 30px;
+  box-shadow: 14px 14px 20px 0px #9c9c9c;
 }
 /* ---------------------Media queries------------------ */
-@media screen and (max-width: 1920px){
-  .bannerOzoone {
-    height: 170px;
-  }
-}
-@media screen and (max-width: 1300px) {
-  .bannerOzoone {
-    height: 120px;
-  }
-}
 @media screen and (max-width: 840px) {
   .OzooneP1 p {
     width: 80%;

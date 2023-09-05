@@ -1,13 +1,3 @@
-.bannerPapiers {
-  background-color: black;
-  background-image: url(/img_sections_créations/victoria.png);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 180px;
-}
 
 .listImages {
   display: flex;
@@ -27,17 +17,6 @@
   max-width: 100%;
   max-height: 400px;
   margin: 20px;
-}
-@media screen and (max-width: 1920px){
-  .bannerPapiers {
-    height: 170px;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .bannerPapiers {
-    height: 120px;
-  }
 }
 @media screen and (max-width: 910px) {
   .listImages {
@@ -61,7 +40,6 @@
   footer {
     display: none;
   }
-
   .listImages {
     margin: 25px 0 100px 0;
   }

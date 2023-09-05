@@ -1,18 +1,20 @@
-.bannerContact {
-  background-color: black;
-  background-image: url(/banner/projets.png);
-  background-size: cover;
-  background-position: center;
+.Contact {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 180px;
+  padding: 130px 300px;
+}
+.infosContact {
+  padding: 0 100px 
+}
+.TexteContact {
+  font-size: 1.3em;
+  padding: 0 100px;
 }
 .listContact {
   display: flex;
   flex-wrap: wrap;
-  margin: 200px 0px;
+  margin: 130px 0 0 0;
   justify-content: space-evenly;
+  align-items: center;
   width: 100%;
 }
 .listContact img {
@@ -20,7 +22,7 @@
   width: 100%;
 }
 .listContact a {
-  width: 14vh;
+  width: 120px;
 }
 .logoContact {
   text-decoration: none;
@@ -30,26 +32,110 @@
   text-align: center;
   align-items: center;
   padding: 15px 0;
-  font-size: 20px;
+  font-size: 1.1em;
   text-transform: uppercase;
 }
 .logoContact:hover {
-  color: #453f7a;
+  color: #0b5548;
   text-decoration: underline;
 }
-@media screen and (max-width: 1300px) {
-  .bannerContact {
-    height: 120px;
+
+.ImgContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 2300px) {
+  .infosContact {
+    padding: 0 
+  }
+  .Contact {
+    padding: 110px 230px;
   }
   .listContact {
-    margin: 100px 0 ;
+    margin: 50px 0 0 0 ;
   }
 }
-@media screen and (max-width: 580px) {
-  .listContact {
+
+@media screen and (max-width: 1880px) {
+  .Contact {
+    padding: 80px 180px;
+  }
+  
+  .ImgContact img {
+    height: 350px;
+  }
+  .TexteContact { 
+    padding: 0 90px;
+    font-size: 1.2em;
+  }
+  .listContact a {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .TexteContact { 
+    padding: 0 100px;
+  }
+  .ImgContact img {
+    height: 300px;
+  }
+  .Contact {
+    padding: 80px 100px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .TexteContact { 
+    padding: 0;
+  }
+  .Contact {
+    padding: 80px 70px;
+  }
+  .listContact a {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Contact {
+    padding: 80px 30px;
+  }
+  .listContact a {
+    width: 60px;
+  }
+  .ImgContact img {
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .ImgContact img {
+    max-width: 90%;
+    height: 200px;
+    padding-bottom: 30px;
+  }
+
+  .Contact {
     display: flex;
-    margin: 20px 0;
+    padding: 50px 25px;
+    flex-direction: column-reverse;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .listContact {
     flex-direction: column;
-    align-items: center;
+    padding: 0 0 20px 0;
+    margin: 15px 0;
+  }
+
+  .listContact a {
+    width: 80px;
   }
 }

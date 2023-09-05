@@ -1,14 +1,3 @@
-.bannerPhotographies {
-    background-color: black;
-    background-image: url(/img_sections_créations/photographie.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 180px;
-  }
-  
   .listPhotographies {
     display: flex;
     flex-wrap: wrap;
@@ -32,12 +21,6 @@
   @media screen and (max-width: 1670px) {
     .listPhotographies {
       padding: 0;
-    }
-  }
-
-  @media screen and (max-width: 1300px) {
-    .bannerPhotographies {
-      height: 120px;
     }
   }
 
