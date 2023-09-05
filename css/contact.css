@@ -42,6 +42,7 @@
 
 .ImgContact {
   display: flex;
+  padding-top: 100px;
   align-items: center;
   justify-content: center;
 }
@@ -123,9 +124,9 @@
     padding: 50px 25px;
     flex-direction: column-reverse;
   }
-  footer {
+  /* footer {
     display: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 480px) {
