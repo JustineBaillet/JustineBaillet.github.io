@@ -29,7 +29,7 @@
 }
 .photo {
   width: 400px;
-  box-shadow: 20px 2px 50px rgba(127, 155, 206, 0.5);
+  box-shadow: 20px 2px 50px #57998d41;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@
   max-width: 100%;
 }
 .photo p {
-  box-shadow: 4px 20px 50px #ffffff, 20px 20px 50px rgba(127, 155, 206, 0.5);
+  box-shadow: 4px 20px 50px #ffffff, 20px 20px 50px #57998d41;
   border-radius: 0 0 50px 50px;
   background-color: white;
   font-size: 1.7rem;
