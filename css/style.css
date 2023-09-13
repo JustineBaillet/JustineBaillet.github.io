@@ -17,8 +17,8 @@ li::selection,
 h2::selection,
 h4::selection,
 span::selection,
-img::selection{
-  background-color: #0f6e5dd2;;
+img::selection {
+  background-color: #0f6e5dd2;
   color: white;
 }
 
