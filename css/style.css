@@ -116,7 +116,6 @@ nav ul li:hover {
 
 .bannerProjets a:hover {
 transform: scale(1.1);
-
 }
 
 h2 {
@@ -154,7 +153,6 @@ h2 {
   position: fixed;
   top: 0;
   right: 0;
-  margin-top: -24px;
   z-index: 11;
 }
 .lightbox__prev {
@@ -290,13 +288,22 @@ footer {
 @media screen and (max-width: 1360px) {
   .bannière,
   .bannerProjets {
-    height: 120px;
+    height: 110px;
   }
   header {
     height: 65px;
   }
   .Logo img {
     max-height: 55px;
+  }
+  .lightbox__container img {
+    margin-top: 15vh;
+  }
+  .lightbox__close {
+    top: 80px;
+  }
+  footer {
+    min-height: 55px;
   }
   .footer1 {
     padding-left: 30px;
@@ -310,6 +317,9 @@ footer {
   .Logo img {
     padding-left: 15px;
   }
+  .bannerProjets a:hover {
+    transform: none
+    }
 }
 
 @media screen and (max-width: 520px) {

@@ -66,9 +66,10 @@
 @media screen and (max-width: 1300px) {
   .towerSection2 {
     padding: 15px;
+    min-height: 430px;
   }
   .towerSection2 img {
-    max-height: 370px;
+    max-height: 350px;
   }
 }
 @media screen and (max-width: 840px) {
@@ -79,6 +80,9 @@
   .towerP2 p {
     width: 80%;
     margin: 50px 30px 0 25px;
+  }
+  .towerSection2 img:hover {
+    transform: none
   }
 }
 @media screen and (max-width: 480px) {
