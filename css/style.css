@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   /* border: 1px solid rgb(111, 211, 211); */
-  
 }
 body {
   font-family: "Andika", sans-serif;
@@ -105,6 +104,14 @@ nav ul li:hover {
   justify-content: center;
   align-items: center;
   height: 170px;
+}
+.bannerProjets {
+  background-color: #0b5548;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 170px;
+  padding: 0 50px;
 }
 
 h2 {
@@ -254,7 +261,8 @@ footer {
 
 /* -------------------media screen---------------------- */
 @media screen and (max-width: 1950px) {
-  .bannière {
+  .bannière,
+  .bannerProjets {
     height: 150px;
   }
   header {
@@ -275,7 +283,8 @@ footer {
 }
 
 @media screen and (max-width: 1360px) {
-  .bannière {
+  .bannière,
+  .bannerProjets {
     height: 120px;
   }
   header {
@@ -306,6 +315,13 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  .bannerProjets {
+    padding: 0;
+    justify-content: center;
+  }
+  .bannerProjets img {
+    display: none;
+  }
   a {
     -webkit-tap-highlight-color: transparent;
   }
