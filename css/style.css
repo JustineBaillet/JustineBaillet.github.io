@@ -319,9 +319,6 @@ footer {
     padding: 0;
     justify-content: center;
   }
-  .bannerProjets img {
-    display: none;
-  }
   a {
     -webkit-tap-highlight-color: transparent;
   }
