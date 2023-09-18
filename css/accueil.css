@@ -13,7 +13,7 @@
   padding: 50px 70px;
   width: 40%;
   margin: 0  15px;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   text-align: justify;
 
 }
@@ -21,42 +21,43 @@
 .profil p {
   line-height: 30px;
 }
-
 .profil a {
   color: rgb(58, 58, 58);
 }
-
 .profil a:hover {
   color: rgb(0, 0, 0);
 }
-
 .photo {
   width: 400px;
-  box-shadow: 20px 2px 50px rgba(127, 155, 206, 0.5);
+  box-shadow: 20px 2px 50px #57998d41;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
 }
-
 .photo img {
   border-radius: 50px 50px 0 0;
   max-width: 100%;
 }
-
 .photo p {
-  box-shadow: 4px 20px 50px #ffffff, 20px 20px 50px rgba(127, 155, 206, 0.5);
+  box-shadow: 4px 20px 50px #ffffff, 20px 20px 50px #57998d41;
   border-radius: 0 0 50px 50px;
   background-color: white;
-  font-size: 1.7em;
+  font-size: 1.7rem;
   font-weight: bold;
   font-family: "Baloo 2", sans-serif;
   padding: 10px;
   max-width: 100%;
 }
-
+/* --------------------divider----------------- */
+.image-divider {
+  margin: 15px 0 10px 0 ;
+  width: 100%;
+  filter: drop-shadow(-1px 2px 3px white);
+}
+/* ----------------Experiences----------------- */
 .section2 {
   text-align: center;
-  padding: 60px 0px;
+  padding: 50px 0px;
   min-height: 300px;
   color: #ffffff;
   width: 100%;
@@ -66,7 +67,7 @@
 .section2 H2 {
   padding: 0 0 30px 0;
   margin: 0 0 30px 0;
-  font-size: 3em;
+  font-size: 3rem;
   line-height: 50px;
   color: #ffffff;
   font-family: "Baloo 2", sans-serif;
@@ -338,7 +339,7 @@
 }
 @media screen and (max-width: 1300px) {
   .experience {
-    margin: 0;
+    margin: 0 30px;
     width: 300px;
   }
   .experience h4 span {
@@ -347,26 +348,30 @@
   .profil {
     font-size: 1.1em;
   }
-}
-
-@media screen and (max-width: 1300px) {
   .photo {
     width: 350px;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .experience {
-    margin: 10px 0;
-  }
-  .experience p {
-    margin: 2px 0;
-  }
-  .experience h4 {
-    margin-top: 20px;
-    margin-bottom: -20px;
-    height: 70px;
-  }
+@media screen and (max-width: 1080px) {
+  .listexperiences {
+    flex-direction: column;
+    align-items: center;
+}
+.experience {
+  margin: 10px 0;
+}
+.experience p {
+  margin: 2px 0;
+}
+.experience h4 {
+  margin-top: 20px;
+  margin-bottom: -20px;
+  height: 70px;
+}
+#snps {
+  margin-bottom: 8px;
+}
 }
 
 @media screen and (max-width: 840px) {
@@ -404,9 +409,5 @@
   }
   .experience h4 {
     height: 50px;
-  }
-
-  #snps {
-    margin-bottom: 8px;
   }
 }
