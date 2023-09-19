@@ -1,0 +1,40 @@
+
+.listNumériques {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 50px 0;
+  padding: 0 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.listNumériques a {
+  max-width: 95%;
+}
+
+.listNumériques img {
+  max-height: 450px;
+  max-width: 100%;
+  margin: 20px;
+}
+@media screen and (max-width: 680px) {
+  .listNumériques img {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .listNumériques img {
+    margin: 5px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer {
+    display: none;
+  }
+  
+  .listNumériques {
+    margin: 35px 0 100px 0;
+  }
+}

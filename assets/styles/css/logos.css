@@ -1,0 +1,35 @@
+
+  .listLogos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 150px;
+    justify-content: center;
+    min-height: 100px;
+  }
+  
+  .listLogos img {
+    max-height: 220px;
+    margin: 20px;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 1300px) {
+    .listLogos {
+      padding: 40px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    footer {
+      display: none;
+    }
+  
+    .listLogos {
+      margin: 0 0 50px 0;
+      padding: 40px 0;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    .listLogos img {
+      margin: 20px 0;
+    }
+  }

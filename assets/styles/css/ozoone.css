@@ -1,0 +1,140 @@
+.OzooneSection1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.OzooneP1,
+.OzooneP2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.1em;
+  margin: 50px auto;
+  align-items: center;
+}
+
+.OzooneP1 p {
+  width: 40%;
+  text-align: justify;
+}
+
+.OzooneP2 p {
+  width: 40%;
+  text-align: justify;
+}
+
+.OzooneP2 a {
+  color: black;
+}
+
+.OzooneP2 a:hover {
+  color: #0b5548;
+}
+
+.OzooneP1 img {
+  height: 300px;
+  margin: 0 50px;
+}
+
+.OzooneP2 img {
+  height: 300px;
+  margin: 0 50px;
+}
+.OzooneSection2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: #e7eeed;
+  max-width: 100%;
+  min-height: 500px;
+  align-items: center;
+  padding: 50px;
+}
+.OzooneSection2 img {
+  max-width: 100%;
+  margin: 10px 5px;
+  max-height: 400px;
+  border-radius: 30px;
+  box-shadow: 14px 14px 20px 0px #9c9c9c;
+  transition: 0.2s;
+}
+.OzooneSection2 img:hover {
+  transform: scale(1.03);
+}
+/* ---------------------Media queries------------------ */
+@media screen and (max-width: 1600px) {
+  .OzooneSection2 {
+    padding: 15px;
+  }
+  .OzooneSection2 img {
+    max-height: 350px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .OzooneSection2 img {
+    max-height: 300px;
+  }
+  .OzooneSection2 {
+    min-height: 400px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .OzooneP1 p {
+    width: 80%;
+    margin: 0 25px 50px 25px;
+  }
+  .OzooneP2 p {
+    width: 80%;
+    margin: 50px 30px 0 25px;
+  }
+  .OzooneSection2 img:hover {
+    transform: none
+  }
+}
+@media screen and (max-width: 480px) {
+  .OzooneP1 p,
+  .OzooneP1 img {
+    animation: none;
+  }
+  .OzooneP2 p,
+  .OzooneP2 img {
+    animation: none;
+  }
+
+  .OzooneP1 {
+    margin: 30px 0;
+  }
+  .OzooneP1 p {
+    margin: 5px 0 20px 0;
+    padding: 0 50px;
+    font-size: 1rem;
+    line-height: 23px;
+  }
+  .OzooneP2 {
+    margin: 30px 0;
+  }
+  .OzooneP2 p {
+    margin: 20px 0 0 0;
+    padding: 0 50px;
+    font-size: 1rem;
+    line-height: 23px;
+  }
+  .OzooneSection2 {
+    padding: 10px;
+    margin: 0 0 50px 0;
+  }
+  .OzooneSection2 img {
+    max-width: 100%;
+    margin: 15px 0;
+  }
+  .OzooneP2 img {
+    max-width: 95%;
+  }
+  footer {
+    display: none;
+    animation: none;
+  }
+}

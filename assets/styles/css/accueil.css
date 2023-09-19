@@ -1,0 +1,397 @@
+/* ---------Page CSS de index.html------------- */
+.section1 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 56px 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 41vh;
+}
+.profil {
+  padding: 50px 70px;
+  width: 40%;
+  margin: 0  15px;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+.profil a {
+  color: rgb(58, 58, 58);
+}
+.profil a:hover {
+  color: rgb(0, 0, 0);
+}
+.photo {
+  width: 400px;
+  box-shadow: 20px 2px 50px #57998d41;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.photo img {
+  border-radius: 50px 50px 0 0;
+  max-width: 100%;
+}
+.photo p {
+  box-shadow: 4px 20px 50px #ffffff, 20px 20px 50px #57998d41;
+  border-radius: 0 0 50px 50px;
+  background-color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: "Baloo 2", sans-serif;
+  padding: 10px;
+  max-width: 100%;
+}
+/* --------------------divider----------------- */
+.image-divider {
+  margin: 15px 0 10px 0 ;
+  width: 100%;
+  filter: drop-shadow(-1px 2px 3px white);
+}
+/* ----------------Experiences----------------- */
+.section2 {
+  text-align: center;
+  padding: 50px 0px;
+  min-height: 300px;
+  color: #ffffff;
+  width: 100%;
+  min-height: 25vh;
+}
+
+.section2 H2 {
+  padding: 0 0 30px 0;
+  margin: 0 0 30px 0;
+  font-size: 3rem;
+  line-height: 50px;
+  color: #ffffff;
+}
+.listexperiences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  min-height: auto;
+}
+.experience {
+  text-align: center;
+  margin: 10px 40px;
+  width: 350px;
+  z-index: 1;
+}
+.experience h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 25px;
+  height: 50px;
+  text-decoration: underline;
+}
+.experience h3 span {
+  font-size: 18px;
+}
+.experience p {
+  color: rgba(255, 255, 255, 0.822);
+  font-size: 19px;
+  margin: 22px 0;
+  font-weight: 100
+}
+/* -----------------------animation css bubble--------------------------- */
+
+@import url("https://fonts.googleapis.com/css?family=Exo+2:900");
+
+.container {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%),
+    url(https://images.unsplash.com/photo-1502726299822-6f583f972e02);
+  background-blend-mode: multiply;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.bubbles-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 15rem;
+  transform: translateX(-50%);
+  opacity: 0.75;
+  overflow: visible;
+}
+
+.bubbles {
+  width: 100%;
+  height: auto;
+}
+.bubbles circle {
+  stroke: white;
+  fill: none;
+}
+.bubbles > g > g:nth-of-type(3n) circle {
+  stroke: #87f5fb;
+}
+.bubbles > g > g:nth-of-type(4n) circle {
+  stroke: #8be8cb;
+}
+
+.bubbles-large {
+  overflow: visible;
+}
+.bubbles-large > g {
+  transform: translateY(2048px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.bubbles-large g:nth-of-type(1) {
+  animation: up 6.5s infinite;
+}
+.bubbles-large g:nth-of-type(1) g {
+  transform: translateX(350px);
+}
+.bubbles-large g:nth-of-type(1) circle {
+  animation: wobble 3s infinite ease-in-out;
+}
+.bubbles-large g:nth-of-type(2) {
+  animation: up 5.25s 250ms infinite;
+}
+.bubbles-large g:nth-of-type(2) g {
+  transform: translateX(450px);
+}
+.bubbles-large g:nth-of-type(2) circle {
+  animation: wobble 3s infinite ease-in-out;
+}
+.bubbles-large g:nth-of-type(3) {
+  animation: up 6s 750ms infinite;
+}
+.bubbles-large g:nth-of-type(3) g {
+  transform: translateX(700px);
+}
+.bubbles-large g:nth-of-type(3) circle {
+  animation: wobble 3s infinite ease-in-out;
+}
+.bubbles-large g:nth-of-type(4) {
+  animation: up 5.5s 1.5s infinite;
+}
+.bubbles-large g:nth-of-type(4) g {
+  transform: translateX(500px);
+}
+.bubbles-large g:nth-of-type(4) circle {
+  animation: wobble 3s infinite ease-in-out;
+}
+.bubbles-large g:nth-of-type(5) {
+  animation: up 6.5s 4s infinite;
+}
+.bubbles-large g:nth-of-type(5) g {
+  transform: translateX(675px);
+}
+.bubbles-large g:nth-of-type(5) circle {
+  animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-small {
+  overflow: visible;
+}
+.bubbles-small > g {
+  transform: translateY(2048px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.bubbles-small g circle {
+  transform: scale(0);
+}
+.bubbles-small g:nth-of-type(1) {
+  animation: up 5.25s infinite;
+}
+.bubbles-small g:nth-of-type(1) g {
+  transform: translateX(350px);
+}
+.bubbles-small g:nth-of-type(1) circle {
+  animation: wobble 3s infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(2) {
+  animation: up 5.75s infinite;
+}
+.bubbles-small g:nth-of-type(2) g {
+  transform: translateX(750px);
+}
+.bubbles-small g:nth-of-type(2) circle {
+  animation: wobble 3s infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(3) {
+  animation: up 5.25s 250ms infinite;
+}
+.bubbles-small g:nth-of-type(3) g {
+  transform: translateX(350px);
+}
+.bubbles-small g:nth-of-type(3) circle {
+  animation: wobble 3s 250ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(4) {
+  animation: up 5.75s 325ms infinite;
+}
+.bubbles-small g:nth-of-type(4) g {
+  transform: translateX(180px);
+}
+.bubbles-small g:nth-of-type(4) circle {
+  animation: wobble 3s 325ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(5) {
+  animation: up 6s 125ms infinite;
+}
+.bubbles-small g:nth-of-type(5) g {
+  transform: translateX(350px);
+}
+.bubbles-small g:nth-of-type(5) circle {
+  animation: wobble 3s 250ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(6) {
+  animation: up 5.13s 250ms infinite;
+}
+.bubbles-small g:nth-of-type(6) g {
+  transform: translateX(650px);
+}
+.bubbles-small g:nth-of-type(6) circle {
+  animation: wobble 3s 125ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(7) {
+  animation: up 6.25s 350ms infinite;
+}
+.bubbles-small g:nth-of-type(7) g {
+  transform: translateX(480px);
+}
+.bubbles-small g:nth-of-type(7) circle {
+  animation: wobble 3s 325ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(8) {
+  animation: up 7s 200ms infinite;
+}
+.bubbles-small g:nth-of-type(8) g {
+  transform: translateX(330px);
+}
+.bubbles-small g:nth-of-type(8) circle {
+  animation: wobble 3s 325ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(9) {
+  animation: up 6.25s 233ms infinite;
+}
+.bubbles-small g:nth-of-type(9) g {
+  transform: translateX(230px);
+}
+.bubbles-small g:nth-of-type(9) circle {
+  animation: wobble 3s 275ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(10) {
+  animation: up 6s 900ms infinite;
+}
+.bubbles-small g:nth-of-type(10) g {
+  transform: translateX(730px);
+}
+.bubbles-small g:nth-of-type(10) circle {
+  animation: wobble 2s 905ms infinite ease-in-out;
+}
+
+@keyframes wobble {
+  33% {
+    transform: translateX(-50px);
+  }
+  66% {
+    transform: translateX(50px);
+  }
+}
+@keyframes up {
+  0% {
+    opacity: 0;
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1024px);
+  }
+}
+
+/* ---------------------Media queries----------------------------- */
+@media screen and (max-width: 2000px) {
+  .profil p {
+    font-size: 0.9em;
+  }
+  .profil {
+    font-size: 1.2em;
+    padding: 50px;
+  }
+
+}
+@media screen and (max-width: 1300px) {
+  .experience {
+    margin: 0 30px;
+    width: 300px;
+  }
+  .experience h3 span {
+    font-size: 15px;
+  }
+  .profil {
+    font-size: 1.1em;
+  }
+  .photo {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .listexperiences {
+    flex-direction: column;
+    align-items: center;
+}
+.experience {
+  margin: 10px 0;
+}
+.experience p {
+  margin: 2px 0;
+}
+.experience h3 {
+  margin-top: 20px;
+  margin-bottom: -20px;
+  height: 70px;
+}
+#snps {
+  margin-bottom: 8px;
+}
+}
+
+@media screen and (max-width: 840px) {
+  .profil {
+    width: 95%;
+    padding: 0 25px 35px 25px;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section2 {
+    padding: 20px 120px;
+  }
+
+  .section2 H2 {
+    padding: 0 0 20px 0;
+    margin: 0;
+  }
+  .profil {
+    padding: 0 45px 35px 45px;
+  }
+  .photo {
+    max-width: 300px;
+  }
+  .listexperiences {
+    margin: 0 0 60px 0;
+  }
+  .experience h3 {
+    height: 50px;
+  }
+  footer {
+    display: none;
+  }
+}
