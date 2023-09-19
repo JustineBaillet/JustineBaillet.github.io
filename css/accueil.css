@@ -1,5 +1,4 @@
 /* ---------Page CSS de index.html------------- */
-
 .section1 {
   text-align: center;
   display: flex;
@@ -15,11 +14,6 @@
   margin: 0  15px;
   font-size: 1.3rem;
   text-align: justify;
-
-}
-
-.profil p {
-  line-height: 30px;
 }
 .profil a {
   color: rgb(58, 58, 58);
@@ -70,9 +64,7 @@
   font-size: 3rem;
   line-height: 50px;
   color: #ffffff;
-  font-family: "Baloo 2", sans-serif;
 }
-
 .listexperiences {
   display: flex;
   flex-wrap: wrap;
@@ -80,30 +72,27 @@
   width: 100%;
   min-height: auto;
 }
-
 .experience {
   text-align: center;
   margin: 10px 40px;
   width: 350px;
   z-index: 1;
 }
-
-.experience h4 {
-  font-size: 1.5rem;
+.experience h3 {
+  font-size: 1.6rem;
   font-weight: bold;
   line-height: 25px;
   height: 50px;
   text-decoration: underline;
 }
-
-.experience h4 span {
+.experience h3 span {
   font-size: 18px;
 }
-
 .experience p {
   color: rgba(255, 255, 255, 0.822);
   font-size: 19px;
   margin: 22px 0;
+  font-weight: 100
 }
 /* -----------------------animation css bubble--------------------------- */
 
@@ -329,7 +318,6 @@
 @media screen and (max-width: 2000px) {
   .profil p {
     font-size: 0.9em;
-    line-height: 25px;
   }
   .profil {
     font-size: 1.2em;
@@ -342,7 +330,7 @@
     margin: 0 30px;
     width: 300px;
   }
-  .experience h4 span {
+  .experience h3 span {
     font-size: 15px;
   }
   .profil {
@@ -364,7 +352,7 @@
 .experience p {
   margin: 2px 0;
 }
-.experience h4 {
+.experience h3 {
   margin-top: 20px;
   margin-bottom: -20px;
   height: 70px;
@@ -394,20 +382,16 @@
   .profil {
     padding: 0 45px 35px 45px;
   }
-  .profil p {
-    line-height: 20px;
-  }
-
   .photo {
     max-width: 300px;
-  }
-  footer {
-    display: none;
   }
   .listexperiences {
     margin: 0 0 60px 0;
   }
-  .experience h4 {
+  .experience h3 {
     height: 50px;
+  }
+  footer {
+    display: none;
   }
 }

@@ -26,46 +26,46 @@
 .projet_img img {
   max-width: 100%;
   border-radius: 0 0 25px 25px;
- }
+}
 .projet:hover {
   transform: scale(1.1);
 }
 .projet_p {
   background-color: #f3f3f3;
   font-size: 1.3rem;
-    font-weight: 800;
-   height: 100%;
+  font-weight: 800;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0 0 20px 20px ;
+  border-radius: 0 0 20px 20px;
 }
 .projet a {
   text-decoration: none;
   color: black;
 }
-
 @media screen and (max-width: 2100px) {
-  .listprojets { 
+  .listprojets {
     padding: 55px 300px;
   }
 }
 
 @media screen and (max-width: 1950px) {
   .projet {
-    margin: 20px 50px;}
-    
-    .listprojets { 
+    margin: 20px 50px;
+  }
+
+  .listprojets {
     padding: 50px 220px;
   }
 }
 
 @media screen and (max-width: 1550px) {
-  .listprojets { 
+  .listprojets {
     padding: 40px 150px;
   }
-  
+
   .projet {
     margin: 15px 20px;
     height: 200px;
@@ -74,7 +74,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .listprojets { 
+  .listprojets {
     padding: 40px 0px;
   }
 }
