@@ -116,14 +116,6 @@ nav ul li:hover {
   align-items: center;
   height: 170px;
 }
-.bannerProjets {
-  background-color: #0b5548;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 170px;
-  padding: 0 50px;
-}
 
 h2 {
   max-width: 100%;
@@ -161,7 +153,6 @@ h2 {
  color: #0b5548;
  display: flex;
  align-items: center;
- font-size: 1.2rem;
  transition: 0.2s ease;
 }
 .skip-content div a:hover  {
@@ -266,6 +257,7 @@ footer {
   background-color:black;
   display: flex;
   align-items: center;
+
 }
 .footer_links {
   display: flex;
@@ -299,8 +291,7 @@ footer {
 }
 /* -------------------media screen---------------------- */
 @media screen and (max-width: 1950px) {
-  .bannière,
-  .bannerProjets {
+  .bannière {
     height: 150px;
   }
   header {
@@ -320,8 +311,7 @@ footer {
   }
 }
 @media screen and (max-width: 1360px) {
-  .bannière,
-  .bannerProjets {
+  .bannière {
     height: 110px;
   }
   header {
@@ -336,6 +326,7 @@ footer {
   .lightbox__close {
     top: 80px;
   }
+
   footer {
     min-height: 55px;
   }
@@ -346,24 +337,31 @@ footer {
     padding-right: 40px;
 }
 }
+
+@media screen and (max-width: 1050px) {
+  .skip {
+    min-height: 60px;
+  }
+
+}
 @media screen and (max-width: 800px) {
   .Logo img {
     padding-left: 15px;
   }
-  .bannerProjets a:hover {
-    transform: none
-    }
+  .skip-content div {
+    font-size: 1.1rem;
+  }
+  .skip-content img{
+    height: 20px; 
+  }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 570px) {
   h2 {
     font-size: 2.8rem;
     line-height: 50px;
   }
 }
 @media screen and (max-width: 480px) {
-  .bannerProjets {
-    padding: 0 20px ;
-  }
   a {
     -webkit-tap-highlight-color: transparent;
   }
@@ -419,6 +417,9 @@ footer {
     padding-left: 15px;
   }
   .lightbox {
+    display: none;
+  }
+  .skip {
     display: none;
   }
 }

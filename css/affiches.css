@@ -3,8 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  margin: 50px 0;
-  padding: 0 100px;
+  padding: 80px 100px;
   justify-content: center;
 }
 
@@ -22,7 +21,9 @@
 @media screen and (max-width: 2200px) {
   .listAffiches img {
     max-height: 550px;
-
+  }
+  .listAffiches {
+    padding: 40px 100px;
   }
 }
 @media screen and (max-width: 1300px) {
