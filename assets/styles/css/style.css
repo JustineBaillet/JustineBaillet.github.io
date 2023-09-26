@@ -25,23 +25,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+*::selection {
+  background-color: #0f6e5dd2;
+  color: white;
+}
 body {
   font-family: "Andika", sans-serif;
   background-color: #f3f3f3;
   max-width: 5000px;
   margin: 0 auto;
 }
-p::selection,
-a::selection,
-br::selection,
-li::selection,
-h2::selection,
-h4::selection,
-span::selection,
-img::selection {
-  background-color: #0f6e5dd2;
-  color: white;
-}
+
 /* --------Scrollbar--------- */
 body::-webkit-scrollbar {
   width: 5px;
