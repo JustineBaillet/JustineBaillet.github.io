@@ -109,7 +109,7 @@
   }
   .OzooneP1 p {
     margin: 5px 0 20px 0;
-    padding: 0 50px;
+    padding: 0;
     font-size: 1rem;
     line-height: 23px;
   }
@@ -118,7 +118,7 @@
   }
   .OzooneP2 p {
     margin: 20px 0 0 0;
-    padding: 0 50px;
+    padding: 0;
     font-size: 1rem;
     line-height: 23px;
   }

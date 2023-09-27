@@ -372,7 +372,7 @@
 
 @media screen and (max-width: 480px) {
   .section2 {
-    padding: 20px 120px;
+    padding: 20px 0px;
   }
 
   .section2 H2 {
@@ -380,7 +380,8 @@
     margin: 0;
   }
   .profil {
-    padding: 0 45px 35px 45px;
+    padding: 0 25px 45px;
+    margin: 0;
   }
   .photo {
     max-width: 300px;

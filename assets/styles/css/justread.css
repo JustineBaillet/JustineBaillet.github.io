@@ -112,7 +112,7 @@
 
   .justreadP1 p {
     margin: 5px 0 25px 0;
-    padding: 0 50px;
+    padding: 0;
     font-size: 1rem;
     line-height: 22px;
   }
@@ -123,7 +123,7 @@
 
   .justreadP2 p {
     margin: 25px 0 0 0;
-    padding: 0 50px;
+    padding: 0;
     font-size: 1rem;
     line-height: 22px;
   }

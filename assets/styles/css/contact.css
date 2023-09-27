@@ -116,20 +116,19 @@
 }
 
 @media screen and (max-width: 850px) {
+  .ImgContact {
+    padding: 50px 0;
+  }
   .ImgContact img {
-    max-width: 90%;
-    height: 200px;
-    padding-bottom: 30px;
+    max-width: 95%;
+    height: 250px;
   }
 
   .Contact {
     display: flex;
-    padding: 50px 25px;
-    flex-direction: column-reverse;
+    padding: 50px 25px 100px;
+    flex-direction: column;
   }
-  /* footer {
-    display: none;
-  } */
 }
 
 @media screen and (max-width: 480px) {
@@ -137,6 +136,9 @@
     flex-direction: column;
     padding: 0 0 20px 0;
     margin: 15px 0;
+  }
+  .ImgContact {
+    padding: 10px 0;
   }
 
   .listContact a {
