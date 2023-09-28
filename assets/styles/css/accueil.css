@@ -104,7 +104,7 @@
   align-content: center;
   justify-content: center;
   background-image: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%),
-    url(https://images.unsplash.com/photo-1502726299822-6f583f972e02);
+    url(../../images/BgAccueil.webp);
   background-blend-mode: multiply;
   background-size: cover;
   overflow: hidden;
