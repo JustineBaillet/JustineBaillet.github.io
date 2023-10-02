@@ -383,6 +383,9 @@ footer {
   .active #icons:before {
     content: "\2715";
   }
+  .mainOpacity {
+   opacity: 0.3;
+  }
   nav ul {
     position: fixed;
     right: -100%;
