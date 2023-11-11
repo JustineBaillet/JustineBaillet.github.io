@@ -29,10 +29,6 @@
   color: black;
 }
 
-.OzooneP2 a:hover {
-  color: #0b5548;
-}
-
 .OzooneP1 img {
   height: 300px;
   margin: 0 50px;
@@ -42,6 +38,7 @@
   height: 300px;
   margin: 0 50px;
 }
+
 .OzooneSection2 {
   display: flex;
   flex-wrap: wrap;
