@@ -2,15 +2,18 @@
   .listLogos {
     display: flex;
     flex-wrap: wrap;
-    padding: 150px;
+    padding: 100px;
     justify-content: center;
     min-height: 100px;
+    max-width: 2400px;
+    margin: 0 auto;
+    align-items: center;
   }
   
   .listLogos img {
-    max-height: 220px;
-    margin: 20px;
-    max-width: 100%;
+    max-height: 200px;
+    margin: 20px 50px;
+    max-width: 380px;
   }
   @media screen and (max-width: 1300px) {
     .listLogos {

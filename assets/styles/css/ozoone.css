@@ -39,11 +39,14 @@
   margin: 0 50px;
 }
 
+.OzooneP2 a:hover {
+  color: #f9cacc;
+}
 .OzooneSection2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background: #e7eeed;
+  background: #ccd8ea;
   max-width: 100%;
   min-height: 500px;
   align-items: center;
@@ -60,6 +63,8 @@
 .OzooneSection2 img:hover {
   transform: scale(1.03);
 }
+
+
 /* ---------------------Media queries------------------ */
 @media screen and (max-width: 1600px) {
   .OzooneSection2 {

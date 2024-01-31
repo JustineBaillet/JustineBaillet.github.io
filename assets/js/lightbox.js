@@ -1,16 +1,10 @@
 import { enableBodyScroll, disableBodyScroll } from "./body-scroll-lock.js";
 
-// ----------------------Lightbox------------------------------------------------
-/**
- * @property {HTMLElement} element
- * @property {string[]} images Chemins des images de la lightbox
- * @property {string} url Image actuellement affiché
- */
 class Lightbox {
   static init() {
     const links = Array.from(
       document.querySelectorAll(
-        'a[href$=".png"], a[href$=".webp"], a[href$=".jpg"], a[href$=".svg"], a[href$=".jpeg"]'
+        'a[href$=".png"], a[href$=".webp"], a[href$=".jpg"], a[href$=".svg"], a[href$=".jpeg"], a[href$=".mp4"], a[href$=".gif"]'
       )
     );
     const gallery = links.map((link) => link.getAttribute("href"));
@@ -22,19 +16,20 @@ class Lightbox {
     );
   }
 
-  /**
-   * @param {string} url URL de l'image
-   * @param {string[]} images chemins des images de la lightbox
-   */
-
   constructor(url, images) {
-    if (activeLightbox) {
-      activeLightbox.close();
-    }
-    
     this.element = this.buildDOM(url);
     this.images = images;
-    this.loadImage(url);
+    this.url = null;
+    this.currentIndex = this.images.findIndex((image) => image === url);
+    this.isLoading = false;
+    this.loadImage(url)
+      .then(() => {
+        this.isLoading = false;
+      })
+      .catch((error) => {
+        console.error("Error loading image or video:", error);
+        this.isLoading = false;
+      });
     this.onKeyUp = this.onKeyUp.bind(this);
     document.body.appendChild(this.element);
     disableBodyScroll(this.element);
@@ -43,28 +38,65 @@ class Lightbox {
     activeLightbox = this;
   }
 
-  /**
-   * @param {string} url URL de l'image
-   */
-  loadImage(url) {
-    this.url = null;
-    const image = new Image();
-    const container = this.element.querySelector(".lightbox__container");
-    const loader = document.createElement("div");
-    loader.classList.add("lightbox__loader");
-    container.innerHTML = "";
-    container.appendChild(loader);
-    image.onload = () => {
-      container.removeChild(loader);
-      container.appendChild(image);
-      this.url = url;
-    };
-    image.src = url;
-  }
 
-  /**
-   * @param {KeyboardEvent} e
-   */
+  loadImage(url) {
+    return new Promise((resolve, reject) => {
+      this.url = null;
+      this.isLoading = true;
+      const container = this.element.querySelector(".lightbox__container");
+      const loader = document.createElement("div");
+      loader.classList.add("lightbox__loader");
+      container.innerHTML = "";
+      container.appendChild(loader);
+  
+      // Vérifie si l'URL est une vidéo
+      if (url.endsWith(".mp4")) {
+        const video = document.createElement("video");
+        video.src = url;
+        video.controls = true;
+  
+        // Réglez le volume à 10%
+        video.volume = 0.1;
+  
+        // Démarre la vidéo automatiquement
+        video.autoplay = true;
+  
+        // Appliquer la taille maximale à 70vh
+        video.style.maxHeight = '70vh';
+        video.style.width = 'auto';
+  
+        video.addEventListener("loadeddata", () => {
+          console.log("Video loaded:", url);
+          container.removeChild(loader);
+          container.appendChild(video);
+          this.url = url;
+          this.isLoading = false;
+          resolve();
+        });
+  
+    
+        video.addEventListener("error", (error) => {
+          console.error("Error loading video:", error);
+          this.isLoading = false; 
+          reject(error);
+        });
+      } else {
+        // Chargez l'image comme précédemment
+        const image = new Image();
+        image.onload = () => {
+          console.log("Image loaded:", url);
+          container.removeChild(loader);
+          container.appendChild(image);
+          this.url = url;
+          this.isLoading = false; 
+          resolve();
+        };
+        image.src = url;
+      }
+    });
+  }
+  
+
   onKeyUp(e) {
     if (e.key === "Escape") {
       this.close(e);
@@ -75,9 +107,6 @@ class Lightbox {
     }
   }
 
-  /** Ferme la lightbox
-   * @param {MouseEvent|KeyboardEvent} e
-   */
   close(e) {
     this.element.classList.add("fadeOut");
     enableBodyScroll(this.element);
@@ -88,34 +117,55 @@ class Lightbox {
     activeLightbox = null;
   }
 
-  /**
-   * @param {MouseEvent|KeyboardEvent} e
-   */
   next(e) {
     e.preventDefault();
-    let i = this.images.findIndex((image) => image === this.url);
-    if (i === this.images.length - 1) {
-      i = -1;
+  
+    // Vérifiez si la vidéo actuelle est en cours de chargement
+    if (this.isLoading) {
+      return;
     }
-    this.loadImage(this.images[i + 1]);
+  
+    this.isLoading = true;
+  
+    // Augmentez l'index avant le chargement pour éviter de recharger la même vidéo
+    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+  
+    let nextIndex = (this.currentIndex + 1) % this.images.length;
+  
+    if (nextIndex === 0) {
+      console.log("Loading the first video");
+    } else {
+      console.log("Loading next video");
+    }
+  
+    this.loadImage(this.images[nextIndex])
+      .then(() => {
+        console.log("Next image or video loaded successfully");
+      })
+      .catch((error) => {
+        console.error("Error loading image or video:", error);
+      })
+      .finally(() => {
+        
+        setTimeout(() => {
+          this.isLoading = false;
+          console.log("Loading marked as complete");
+        }, 100);
+      });
   }
 
-  /**
-   * @param {MouseEvent|KeyboardEvent} e
-   */
   prev(e) {
     e.preventDefault();
-    let i = this.images.findIndex((image) => image === this.url);
-    if (i === 0) {
-      i = this.images.length;
-    }
-    this.loadImage(this.images[i - 1]);
+    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+    this.loadImage(this.images[this.currentIndex])
+      .then(() => {
+        this.isLoading = false;
+      })
+      .catch((error) => {
+        console.error("Error loading image or video:", error);
+        this.isLoading = false;
+      });
   }
-
-  /**
-   * @param {string} url URL de l'image
-   * @return {HTMLElement}
-   */
 
   buildDOM(url) {
     const dom = document.createElement("div");
@@ -137,5 +187,6 @@ class Lightbox {
     return dom;
   }
 }
+
 let activeLightbox = null;
 Lightbox.init();
