@@ -23,11 +23,11 @@
   color: black;
 }
 .CountryP1 a:hover {
-  color: #0b5548;
+  color: #f9cacc;
 }
 
 .CountryP2 a:hover {
-  color: #0b5548;
+  color: #f9cacc;
 }
 
 .CountryP2 p {
@@ -46,7 +46,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background: #e7eeed;
+  background: #ccd8ea;
   max-width: 100%;
   min-height: 500px;
   padding: 50px 0;

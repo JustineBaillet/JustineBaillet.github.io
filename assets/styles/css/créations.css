@@ -19,6 +19,7 @@
   overflow: hidden;
   box-shadow: 14px 14px 20px 0px #cfd3d2;
   transition: 0.2s;
+  cursor: pointer;
 }
 .Création_img {
   max-width: 100%;

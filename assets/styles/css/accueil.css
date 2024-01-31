@@ -94,6 +94,33 @@
   margin: 22px 0;
   font-weight: 100
 }
+
+#btn a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 75px;
+  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  background: #f9cacc;
+  transition: 0.2s ease;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #ffdfe1;
+}
+
 /* -----------------------animation css bubble--------------------------- */
 
 @import url("https://fonts.googleapis.com/css?family=Exo+2:900");
