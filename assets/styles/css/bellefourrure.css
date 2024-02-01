@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 80px 0 0 30px;
+    padding: 80px 0 30px 0;
   }
   
   .BFP1,
@@ -84,7 +84,7 @@
       min-height: 400px;
     }
   }
-  @media screen and (max-width: 840px) {
+  @media screen and (max-width: 880px) {
     .BFP1 p {
       width: 80%;
       margin: 0 25px 50px 25px;
@@ -93,23 +93,42 @@
       width: 80%;
       margin: 50px 30px 0 25px;
     }
+    .BFSection2 {
+        padding: 10px 5px 70px ;
+    }
     .BFSection2 img:hover {
       transform: none
     }
   }
+
+  @media screen and (max-width: 700px) {
+    .BFP1 img {
+      height: 250px;
+      }
+      .BFP2 img {
+
+        height: 300px;
+      }
+      .BFP2 a {
+        display: flex;
+        justify-content: center;
+      }
+  }
   @media screen and (max-width: 480px) {
+
+
+    .BFSection2 img{
+    margin: 7px auto;
+    }
     .BFP1 p,
     .BFP1 img {
-      animation: none;
+        animation: none;
     }
     .BFP2 p,
     .BFP2 img {
-      animation: none;
+        animation: none;
     }
-  
-    .BFP1 {
-      margin: 30px 0;
-    }
+    
     .BFP1 p {
       margin: 5px 0 20px 0;
       padding: 0;
@@ -125,20 +144,19 @@
       font-size: 1rem;
       line-height: 23px;
     }
-    .BFBFP1 {
+    .BFP1 {
       padding: 10px;
       margin: 0 0 50px 0;
     }
-    .BFBFP1 img {
+    .BFP1 img {
       max-width: 100%;
-      margin: 15px 0;
+      margin: 15px auto;
+      height: 150px;
     }
     .BFP2 img {
       max-width: 95%;
-    }
-    footer {
-      display: none;
-      animation: none;
+      margin: 25px auto;
+      height: 200px;
     }
   }
   

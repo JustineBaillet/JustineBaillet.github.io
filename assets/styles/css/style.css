@@ -377,7 +377,7 @@ footer {
     line-height: 50px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 880px) {
   a {
     -webkit-tap-highlight-color: transparent;
   }
@@ -441,7 +441,14 @@ footer {
   .skip {
     display: none;
   }
+
+  footer {
+    display: none;
+    animation: none;
+  }
 }
+
+
 @media screen and (max-width: 300px) {
   nav ul li {
     font-size: 0.8rem;

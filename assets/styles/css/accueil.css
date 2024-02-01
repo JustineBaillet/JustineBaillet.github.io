@@ -388,11 +388,17 @@ button:hover {
 }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 880px) {
   .profil {
     width: 95%;
     padding: 0 25px 35px 25px;
     font-size: 1.1rem;
+  }
+  .listexperiences {
+    margin: 0 0 40px 0;
+  }
+  #btn {
+    margin-bottom: 70px;
   }
 }
 
@@ -413,10 +419,14 @@ button:hover {
     max-width: 300px;
   }
   .listexperiences {
-    margin: 0 0 60px 0;
+    margin: 0 0 30px 0;
   }
   .experience h3 {
     height: 50px;
+  }
+
+  #btn {
+    margin-bottom: 90px;
   }
   footer {
     display: none;
