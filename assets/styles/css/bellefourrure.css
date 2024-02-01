@@ -1,0 +1,144 @@
+.BFSection1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 0 0 30px;
+  }
+  
+  .BFP1,
+  .BFP2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.1em;
+    margin: 50px auto;
+    align-items: center;
+  }
+  
+  .BFP1 p {
+    width: 40%;
+    text-align: justify;
+  }
+  
+  .BFP2 p {
+    width: 40%;
+    text-align: justify;
+  }
+  
+  .BFP2 a {
+    color: black;
+  }
+  
+  .BFP1 img {
+    height: 300px;
+    margin: 0 50px;
+  }
+  
+  .BFP2 img {
+    height: 450px;
+    margin: 0 50px;
+  }
+  
+  .BFP2 a:hover {
+    color: #f9cacc;
+  }
+  .BFSection2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #ccd8ea;
+    max-width: 100%;
+    min-height: 500px;
+    align-items: center;
+    padding: 50px;
+  }
+  .BFSection2 img {
+    max-width: 100%;
+    margin: 10px 5px;
+    max-height: 400px;
+    border-radius: 30px;
+    box-shadow: 14px 14px 20px 0px #9c9c9c;
+    transition: 0.2s;
+  }
+  .BFSection2 img:hover {
+    transform: scale(1.03);
+  }
+  
+  
+  /* ---------------------Media queries------------------ */
+  @media screen and (max-width: 1600px) {
+    .BFSection2 {
+      padding: 15px;
+    }
+    .BFSection2 img {
+      max-height: 350px;
+    }
+  }
+  
+  @media screen and (max-width: 1300px) {
+    .BFSection2 img {
+      max-height: 300px;
+    }
+    .BFSection2 {
+      min-height: 400px;
+    }
+  }
+  @media screen and (max-width: 840px) {
+    .BFP1 p {
+      width: 80%;
+      margin: 0 25px 50px 25px;
+    }
+    .BFP2 p {
+      width: 80%;
+      margin: 50px 30px 0 25px;
+    }
+    .BFSection2 img:hover {
+      transform: none
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .BFP1 p,
+    .BFP1 img {
+      animation: none;
+    }
+    .BFP2 p,
+    .BFP2 img {
+      animation: none;
+    }
+  
+    .BFP1 {
+      margin: 30px 0;
+    }
+    .BFP1 p {
+      margin: 5px 0 20px 0;
+      padding: 0;
+      font-size: 1rem;
+      line-height: 23px;
+    }
+    .BFP2 {
+      margin: 30px 0;
+    }
+    .BFP2 p {
+      margin: 20px 0 0 0;
+      padding: 0;
+      font-size: 1rem;
+      line-height: 23px;
+    }
+    .BFBFP1 {
+      padding: 10px;
+      margin: 0 0 50px 0;
+    }
+    .BFBFP1 img {
+      max-width: 100%;
+      margin: 15px 0;
+    }
+    .BFP2 img {
+      max-width: 95%;
+    }
+    footer {
+      display: none;
+      animation: none;
+    }
+  }
+  

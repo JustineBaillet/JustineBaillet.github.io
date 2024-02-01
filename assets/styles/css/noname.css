@@ -1,0 +1,17 @@
+.nnSection1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nn1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nn1 p {
+    font-size: 2rem;
+    margin: 70px 0;
+}
