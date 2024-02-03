@@ -124,6 +124,11 @@
     font-size: 1rem;
     line-height: 23px;
   }
+
+  .OzooneP2 img {
+    max-width: 98%;
+    margin: 0 auto;
+  }
   .OzooneSection2 {
     padding: 10px;
     margin: 0 0 50px 0;
@@ -131,9 +136,6 @@
   .OzooneSection2 img {
     max-width: 100%;
     margin: 15px 0;
-  }
-  .OzooneP2 img {
-    max-width: 95%;
   }
   footer {
     display: none;

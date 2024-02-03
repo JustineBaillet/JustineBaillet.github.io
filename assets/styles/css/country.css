@@ -104,7 +104,8 @@
   }
 
   .CountryP2 img {
-    max-width: 95%;
+    max-width: 98%;
+    margin: 0 auto;
   }
 
   .CountryP1 {

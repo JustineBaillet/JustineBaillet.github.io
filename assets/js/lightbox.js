@@ -1,5 +1,11 @@
 import { enableBodyScroll, disableBodyScroll } from "./body-scroll-lock.js";
 
+// ----------------------Lightbox------------------------------------------------
+/**
+ * @property {HTMLElement} element
+ * @property {string[]} images Chemins des images de la lightbox
+ * @property {string} url Image actuellement affiché
+ */
 class Lightbox {
   static init() {
     const links = Array.from(
@@ -15,6 +21,11 @@ class Lightbox {
       })
     );
   }
+
+  /**
+   * @param {string} url URL de l'image
+   * @param {string[]} images chemins des images de la lightbox
+   */
 
   constructor(url, images) {
     this.element = this.buildDOM(url);
@@ -97,6 +108,9 @@ class Lightbox {
   }
   
 
+  /**
+   * @param {KeyboardEvent} e
+   */
   onKeyUp(e) {
     if (e.key === "Escape") {
       this.close(e);
@@ -107,6 +121,9 @@ class Lightbox {
     }
   }
 
+  /** Ferme la lightbox
+   * @param {MouseEvent|KeyboardEvent} e
+   */
   close(e) {
     this.element.classList.add("fadeOut");
     enableBodyScroll(this.element);
@@ -117,55 +134,34 @@ class Lightbox {
     activeLightbox = null;
   }
 
+  /**
+   * @param {MouseEvent|KeyboardEvent} e
+   */
   next(e) {
     e.preventDefault();
-  
-    // Vérifiez si la vidéo actuelle est en cours de chargement
-    if (this.isLoading) {
-      return;
+    let i = this.images.findIndex((image) => image === this.url);
+    if (i === this.images.length - 1) {
+      i = -1;
     }
-  
-    this.isLoading = true;
-  
-    // Augmentez l'index avant le chargement pour éviter de recharger la même vidéo
-    this.currentIndex = (this.currentIndex + 1) % this.images.length;
-  
-    let nextIndex = (this.currentIndex + 1) % this.images.length;
-  
-    if (nextIndex === 0) {
-      console.log("Loading the first video");
-    } else {
-      console.log("Loading next video");
-    }
-  
-    this.loadImage(this.images[nextIndex])
-      .then(() => {
-        console.log("Next image or video loaded successfully");
-      })
-      .catch((error) => {
-        console.error("Error loading image or video:", error);
-      })
-      .finally(() => {
-        
-        setTimeout(() => {
-          this.isLoading = false;
-          console.log("Loading marked as complete");
-        }, 100);
-      });
+    this.loadImage(this.images[i + 1]);
   }
 
+  /**
+   * @param {MouseEvent|KeyboardEvent} e
+   */
   prev(e) {
     e.preventDefault();
-    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
-    this.loadImage(this.images[this.currentIndex])
-      .then(() => {
-        this.isLoading = false;
-      })
-      .catch((error) => {
-        console.error("Error loading image or video:", error);
-        this.isLoading = false;
-      });
+    let i = this.images.findIndex((image) => image === this.url);
+    if (i === 0) {
+      i = this.images.length;
+    }
+    this.loadImage(this.images[i - 1]);
   }
+
+  /**
+   * @param {string} url URL de l'image
+   * @return {HTMLElement}
+   */
 
   buildDOM(url) {
     const dom = document.createElement("div");
@@ -187,6 +183,5 @@ class Lightbox {
     return dom;
   }
 }
-
 let activeLightbox = null;
 Lightbox.init();

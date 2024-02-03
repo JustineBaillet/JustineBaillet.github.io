@@ -103,7 +103,8 @@
     margin: 15px 0;
   }
   .justreadP2 img {
-    max-width: 95%;
+    max-width: 98%;
+    margin: 0 auto;
   }
 
   .justreadP1 {

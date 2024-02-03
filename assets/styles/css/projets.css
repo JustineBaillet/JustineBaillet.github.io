@@ -75,16 +75,13 @@
 
 @media screen and (max-width: 1200px) {
   .listprojets {
-    padding: 40px 0px;
+    padding: 40px 0px 110px;
   }
 }
 
 @media screen and (max-width: 480px) {
   footer {
     display: none;
-  }
-  .listprojets {
-    margin: 5px 0 50px 0;
   }
   .projet:hover {
     transform: none;
