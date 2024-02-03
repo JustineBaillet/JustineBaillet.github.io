@@ -121,7 +121,7 @@ button {
   background: #f9cacc;
   transition: 0.2s ease;
   cursor: pointer;
-  margin-top: 10px;
+  margin: 80px 0 20px;
 }
 
 button:hover {

@@ -169,6 +169,10 @@ h2 {
   margin: 0 15px;
 }
 
+.skip-content span:hover  {
+  transform: none;
+}
+
 /* ----------------modal lightbox--------------------  */
 .lightbox {
   position: fixed;
