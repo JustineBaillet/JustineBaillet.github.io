@@ -1,10 +1,9 @@
 import { enableBodyScroll, disableBodyScroll } from "./body-scroll-lock.js";
 
-// ----------------------Lightbox------------------------------------------------
 /**
  * @property {HTMLElement} element
- * @property {string[]} images Chemins des images de la lightbox
- * @property {string} url Image actuellement affiché
+ * @property {string[]} images
+ * @property {string} url
  */
 class Lightbox {
   static init() {
@@ -23,8 +22,8 @@ class Lightbox {
   }
 
   /**
-   * @param {string} url URL de l'image
-   * @param {string[]} images chemins des images de la lightbox
+   * @param {string} url
+   * @param {string[]} images
    */
 
   constructor(url, images) {
@@ -49,7 +48,6 @@ class Lightbox {
     activeLightbox = this;
   }
 
-
   loadImage(url) {
     return new Promise((resolve, reject) => {
       this.url = null;
@@ -59,23 +57,23 @@ class Lightbox {
       loader.classList.add("lightbox__loader");
       container.innerHTML = "";
       container.appendChild(loader);
-  
+
       // Vérifie si l'URL est une vidéo
       if (url.endsWith(".mp4")) {
         const video = document.createElement("video");
         video.src = url;
         video.controls = true;
-  
-        // Réglez le volume à 10%
+
+        // Régle le volume à 10%
         video.volume = 0.1;
-  
+
         // Démarre la vidéo automatiquement
         video.autoplay = true;
-  
+
         // Appliquer la taille maximale à 70vh
-        video.style.maxHeight = '70vh';
-        video.style.width = 'auto';
-  
+        video.style.maxHeight = "70vh";
+        video.style.width = "auto";
+
         video.addEventListener("loadeddata", () => {
           console.log("Video loaded:", url);
           container.removeChild(loader);
@@ -84,11 +82,10 @@ class Lightbox {
           this.isLoading = false;
           resolve();
         });
-  
-    
+
         video.addEventListener("error", (error) => {
           console.error("Error loading video:", error);
-          this.isLoading = false; 
+          this.isLoading = false;
           reject(error);
         });
       } else {
@@ -99,14 +96,13 @@ class Lightbox {
           container.removeChild(loader);
           container.appendChild(image);
           this.url = url;
-          this.isLoading = false; 
+          this.isLoading = false;
           resolve();
         };
         image.src = url;
       }
     });
   }
-  
 
   /**
    * @param {KeyboardEvent} e
@@ -185,3 +181,24 @@ class Lightbox {
 }
 let activeLightbox = null;
 Lightbox.init();
+
+// emote slide
+document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.querySelector(".carousel-emote-slide");
+  const slides = carousel.innerHTML;
+  carousel.innerHTML += slides;
+
+  let currentOffset = 0;
+  let speed = 0.7; // Vitesse de défilement
+
+  function scroll() {
+    currentOffset -= speed;
+    if (Math.abs(currentOffset) >= carousel.scrollWidth / 2) {
+      currentOffset = 0;
+    }
+    carousel.style.transform = `translateX(${currentOffset}px)`;
+    requestAnimationFrame(scroll);
+  }
+
+  scroll();
+});

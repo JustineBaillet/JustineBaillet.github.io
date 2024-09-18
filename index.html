@@ -1,186 +1,186 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Accueil</title>
-  <meta name="description" content="Je m'appelle Justine Baillet, j'ai 24 ans et je suis diplômée d'un MBA UX/UI Designer chez MyDigitalSchool Lyon.">
-  <meta property="og:title" content="Portfolio" />
-  <meta property="og:url" content="https://justinebaillet.github.io/" />
-  <meta property="og:image" content="assets\images\logos\LogoJB.svg" />
-  <meta name="og:description" content="Je m'appelle Justine Baillet, j'ai 24 ans et je suis diplômée d'un MBA UX/UI Designer chez MyDigitalSchool Lyon.">
-  <link rel="shortcut icon" href="/assets/images/logos/logo_portfolio.svg" type="image/png">
-  <link rel="stylesheet" href="/assets/styles/css/style.css">
-  <link rel="stylesheet" href="/assets/styles/css/accueil.css">
-  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <script src="/assets/js/script.js" defer></script>
-</head>
-<body>
-  <header>
-    <nav id="nav">
-      <div class="Logo">
-      <a href="/index.html"><img src="/assets/images/logos/logo_portfolio.svg" alt="Logo JB" /></a>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portefolio - Home</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo_portfolio.svg"
+      type="image/svg"
+    />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo-jb">
+        <a href="./index.html"
+          ><img src="./assets/img/logo_portfolio.svg" alt="logo-site"
+        /></a>
+      </div>
       <ul>
-       <li><a href="/assets/html/projets.html">Projets UX/UI</a></li>
-       <li><a href="/assets/html/créationsGraphiques.html">Créations Graphiques</a></li>
-       <li><a href="/assets/html/créationsPersonnelles.html">Créations Personnelles</a></li>
-        <li><a href="/assets/html/contact.html">Contact</a></li>
+        <li><a href="#à-propos">à propos</a></li>
+        <li><a href="#savoir-faire">savoir faire</a></li>
+        <li id="liProjets">
+          <a href="#projets">projets</a>
+          <div class="second-navbar">
+            <ul>
+              <li><a href="./assets/html/webDesign.html">web design</a></li>
+              <li>
+                <a href="./assets/html/créationsGraphiques.html"
+                  >créations graphiques</a
+                >
+              </li>
+              <li>
+                <a href="./assets/html/réalisationsPersonnelles.html"
+                  >réalisations personneles</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#contact">contact</a></li>
       </ul>
-      <div id="icons"></div>
     </nav>
-  </header>
-  
-  <main id="main">
-    <section class="section1">
-      <div class="profil">
-        <p>Je m'appelle Justine Baillet, j'ai 24 ans et je suis diplômée d'un MBA UX/UI Designer chez <a href="https://www.mydigitalschool.com/" target="_blank">MyDigitalSchool</a> Lyon.
-          Durant mes différentes formations, j'ai été amené à travailler en tant que Graphiste/Web Designer dans l'agence web Andromed (Lille), 
-          dans l'entreprise Net Hygiène (Chambéry) et dans la Police Scientifique (SNPS) de Lyon.<br>
-          <br>
-          Ma formation dans le multimédia et le design m'a permis d'acquérir des compétences dans le domaine de la communication, l'audiovisuel et le web.<br>
-          <br>
-          Je suis ouverte pour toute opportunité dans le domaine du design.
+    <header id="header">
+      <div class="left-header">
+        <h1>Hello, je m'apelle Justine<span> Baillet</span></h1>
+        <h2>
+          Graphiste <br />
+          Webdesigner
+        </h2>
+      </div>
+      <div class="right-header"></div>
+    </header>
+    <main>
+      <div class="à-propos" id="à-propos">
+        <div class="left-container">
+          <h3>à propos</h3>
+          <svg
+            id=""
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1240.52 754.94"
+          >
+            <path
+              stroke="none"
+              fill="black"
+              d="m939.42,524.14c-52.24,4.75-105.18,2.82-157.63-5.8-58.49-9.62-114.9-27.29-167.67-52.53-69.3-33.15-98.7-70.4-110.12-101.25,56.12,4.36,112.62,3.15,168.42-3.91,23-2.91,49.49-7.11,72.91-20.15,25.97-14.46,42.83-37.97,45.11-62.89,2.44-26.71-12.55-55-38.18-72.06-19.84-13.21-45.23-20.34-77.62-21.81-50.99-2.31-98.11,10.22-132.67,35.27-40.83,29.59-63.89,77.84-58.74,122.91.21,1.89.48,3.81.81,5.78-140.09-14.46-276.8-64.22-392.1-144.83-3.4-2.38-8.07-1.55-10.44,1.85-2.37,3.4-1.55,8.07,1.85,10.44,118.8,83.06,259.9,133.94,404.33,147.97,10.81,35.2,41.6,78.72,119.96,116.2,54.05,25.85,111.82,43.96,171.71,53.8,34.65,5.7,69.51,8.55,104.26,8.55,19.33,0,38.63-.89,57.84-2.66l-11.23,38.83,99.25-56.76-109.91-31.48,19.85,34.51Zm-441.28-183.92c-4.55-39.78,16.11-82.59,52.64-109.06,31.82-23.06,75.57-34.58,123.19-32.43,29.58,1.34,52.48,7.65,69.99,19.31,21.11,14.05,33.5,36.9,31.55,58.21-1.8,19.68-16.15,39.28-37.47,51.15-18.96,10.56-40.7,14.98-67.5,18.38-56.64,7.17-114.02,8.2-170.96,3.39-.64-3.08-1.1-6.07-1.43-8.94Z"
+            />
+          </svg>
+        </div>
+        <p>
+          Je suis Justine Baillet, une passionnée du design graphique et de
+          l'UX/UI avec un MBA UX/UI Designer en poche. Fortement influencée par
+          mes expériences variées en agence web, en entreprise et dans la Police
+          Scientifique, j'ai développé une expertise solide en création visuelle
+          et en refonte de sites web. Mon parcours m'a permis de maîtriser des
+          outils comme Adobe Suite, Figma, et InDesign, toujours avec une
+          approche créative et rigoureuse. Je suis ouverte à toute opportunité
+          dans le domaine du design, prête à relever de nouveaux défis créatifs.
         </p>
       </div>
-      <div class="photo animate__animated animate__fadeIn">
-        <img src="/assets/images/photos/photoJB.webp" alt="Photo">
-        <p>Justine Baillet</p>
+      <div class="img-main-container">
+        <img src="./assets/img/Accueil/justread.webp" alt="ImageSiteJustRead" />
+        <img
+          src="./assets/img/Accueil/stitch.webp"
+          id="imgstitch"
+          alt="ImageSiteStitch"
+        />
+        <img src="./assets/img/Accueil/logos.webp" alt="ImageLogos" />
       </div>
-    </section>
-    <div class="container">
-      <section class="section2">
-          <h2>Mes expériences</h2>
-          <div class="listexperiences">       
-            <div class="experience">
-              <h3 id="snps">SNPS<br><span>(Service National de Police Scientifique)</span></h3>
-              <p class="descritption">Graphiste - Web Designer <br>(Alternance)</p>
-              <p class="date">Septembre 2022 - Aout 2023</p>
-           <img class="image-divider" src="/assets/images/icons/Divider.webp" alt="Img divider" />
-              <p>Création de visuels (affiches, flyers, documents, infographies, animations - Suite adobe).<br>
-                Création de catalogues (Indesign).<br>
-                Refonte maquettes site Intranet (Figma).</p>
-            </div>    
-            <div class="experience">
-              <h3>Net Hygiène</h3>
-              <p class="descritption">Web Designer - Graphiste <br>(Alternance)</p>
-              <p class="date">Octobre 2021 - Aout 2022</p>
-              <img class="image-divider" src="/assets/images/icons/Divider.webp" alt="Img divider" />
-              <p>Maquettage du nouveau site web (Figma).<br>
-                Création/Refonte des catalogues (Indesign).<br>
-                Création de visuels (Illustrator, Photoshop, Canva).</p>
-            </div>
-            <div class="experience">
-              <h3>Andromed</h3>
-              <p class="descritption">Web Designer - Graphiste <br>(Alternance)</p>
-              <p class="date">Novembre 2020 - Aout 2021</p>
-              <img class="image-divider" src="/assets/images/icons/Divider.webp" alt="Img divider" />
-              <p>Refonte des maquettes du CEF (Figma).<br>
-                Création de visuels (Illustrator, Photoshop).<br>
-                Création de personnages “emoji” et décors (Illustrator).</p>
-            </div>
-          </div> 
-          <button id="btn"><a href="./assets/html/projets.html">Découvrir</a></button>     
-      <div class="bubbles-container">
-        <svg class="bubbles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701 1024" style="overflow: visible;">
-            <g class="bubbles-large" stroke-width="7">
-                <g>
-                    <g transform="translate(10 940)">
-                        <circle cx="35" cy="35" r="35"/>
-                    </g>
-                </g>
-                <g>
-                    <g transform="translate(373 940)">
-                        <circle cx="35" cy="35" r="35"/>
-                    </g>
-                </g>
-                <g>
-                    <g transform="translate(408 940)">
-                        <circle cx="35" cy="35" r="35"/>
-                    </g>
-                </g>
-                <g>
-                    <g transform="translate(621 940)">
-                        <circle cx="35" cy="35" r="35"/>
-                    </g>
-                </g>
-                <g>
-                    <g transform="translate(179 940)">
-                        <circle cx="35" cy="35" r="35"/>
-                    </g>
-                </g>
-            </g>
-            <g class="bubbles-small" stroke-width="4">
-                <g>
-                    <g transform="translate(147 984)">
-                        <circle cx="15" cy="15" r="15"/>
-                    </g>
-                </g>
-                <g>
-                    <g transform="translate(255 984)">
-                        <circle cx="15" cy="15" r="15"/>
-                    </g>
-                </g>
-                <g>
-                    <g transform="translate(573 984)">
-                        <circle cx="15" cy="15" r="15"/>
-                    </g>
-                </g>
-                <g>
-                    <g transform="translate(429 984)">
-                        <circle cx="15" cy="15" r="15"/>
-                    </g>
-                </g>
-                <g>
-                    <g transform="translate(91 984)">
-                        <circle cx="15" cy="15" r="15"/>
-                    </g>
-                </g>
-                <g>
-                    <g transform="translate(640 984)">
-                        <circle cx="15" cy="15" r="15"/>
-                    </g>
-                </g>
-                <g>
-                    <g transform="translate(321 984)">
-                        <circle cx="15" cy="15" r="15"/>
-                    </g>
-                </g>
-                <g>
-                    <g transform="translate(376 984)">
-                        <circle cx="15" cy="15" r="15"/>
-                    </g>
-                </g>
-                <g>
-                    <g transform="translate(376 984)">
-                        <circle cx="15" cy="15" r="15"/>
-                    </g>
-                </g>
-                <g>
-                    <g transform="translate(497 984)">
-                        <circle cx="15" cy="15" r="15"/>
-                    </g>
-                </g>
-            </g>
-        </svg>
-      </div> 
-    </div>
-  </section>
-  </main>
-  <footer>
-    <div class="footer_links">
-      <div class="footer1">
-        <a href="https://www.linkedin.com/in/justine-baillet/" target="_blank" class="footer_item">
-          <img src="/assets/images/logos/logolinkedin.webp" alt="logo linkedin" /></a>
-        <a href="mailto:jub60@hotmail.fr" class="footer_item">
-          <img src="/assets/images/logos/logomail.webp" alt="logo mail" /></a>
+      <div class="savoir-faire" id="savoir-faire">
+        <div class="left-container">
+          <h3>savoir faire</h3>
+          <svg
+            id=""
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1240.52 754.94"
+          >
+            <path
+              stroke="none"
+              fill="black"
+              d="m939.42,524.14c-52.24,4.75-105.18,2.82-157.63-5.8-58.49-9.62-114.9-27.29-167.67-52.53-69.3-33.15-98.7-70.4-110.12-101.25,56.12,4.36,112.62,3.15,168.42-3.91,23-2.91,49.49-7.11,72.91-20.15,25.97-14.46,42.83-37.97,45.11-62.89,2.44-26.71-12.55-55-38.18-72.06-19.84-13.21-45.23-20.34-77.62-21.81-50.99-2.31-98.11,10.22-132.67,35.27-40.83,29.59-63.89,77.84-58.74,122.91.21,1.89.48,3.81.81,5.78-140.09-14.46-276.8-64.22-392.1-144.83-3.4-2.38-8.07-1.55-10.44,1.85-2.37,3.4-1.55,8.07,1.85,10.44,118.8,83.06,259.9,133.94,404.33,147.97,10.81,35.2,41.6,78.72,119.96,116.2,54.05,25.85,111.82,43.96,171.71,53.8,34.65,5.7,69.51,8.55,104.26,8.55,19.33,0,38.63-.89,57.84-2.66l-11.23,38.83,99.25-56.76-109.91-31.48,19.85,34.51Zm-441.28-183.92c-4.55-39.78,16.11-82.59,52.64-109.06,31.82-23.06,75.57-34.58,123.19-32.43,29.58,1.34,52.48,7.65,69.99,19.31,21.11,14.05,33.5,36.9,31.55,58.21-1.8,19.68-16.15,39.28-37.47,51.15-18.96,10.56-40.7,14.98-67.5,18.38-56.64,7.17-114.02,8.2-170.96,3.39-.64-3.08-1.1-6.07-1.43-8.94Z"
+            />
+          </svg>
         </div>
-      <div class="footer2">
-        <a href="/index.html" class="footer_logo">
-          <img src="/assets/images/logos/logoJbFooter.webp" alt="Logo JB" /></a>
+        <p>
+          Armée de mon MBA et d'une maîtrise des outils comme Adobe Suite,
+          Figma, et InDesign, je transforme des idées en expériences visuelles
+          uniques. J'ai peaufiné mon expertise en agence web et dans des
+          environnements variés, alliant créativité et précision. Que ce soit
+          pour la refonte d'un site web ou la création d'une identité visuelle
+          percutante, je suis toujours à la recherche de nouveaux défis pour
+          repousser les limites du design.
+        </p>
       </div>
-    </div>
-  </footer>
-</body>
+      <section class="sectionProjets" id="projets">
+        <div class="section-container">
+          <ul>
+            <li id="liWebdesign">
+              <a href="./assets/html/webDesign.html" id="web-design"
+                >Web Design</a
+              >
+            </li>
+            <li>
+              <a
+                href="./assets/html/créationsGraphiques.html"
+                id="création-graphique"
+                >Création graphique</a
+              >
+            </li>
+            <li>
+              <a
+                href="./assets/html/réalisationsPersonnelles.html"
+                id="réalisations-personnelles"
+                >Réalisations personnelles</a
+              >
+            </li>
+          </ul>
+          <div class="img-section-container">
+            <div class="img-section"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container" id="contact">
+        <div class="infos">
+          <div class="infos-1">
+            <h4>baillet justine</h4>
+            <p>
+              Le design n'est pas juste ce qu'on voit, mais ce qu'on ressent.
+            </p>
+          </div>
+          <div class="infos-2">
+            <h4>carrière</h4>
+            <p>SNPS (Police Scientifique) - Graphiste/Web Designer</p>
+            <p>Net Hygiène - Web Designer/Graphiste</p>
+            <p>Andromed - Web Designer/Graphiste</p>
+          </div>
+          <div class="infos-3">
+            <h4>contact</h4>
+            <a href="mailto:jub60@hotmail.fr" target="_blank"
+              >jub60@hotmail.fr</a
+            >
+            <a
+              href="https://www.linkedin.com/in/justine-baillet/"
+              target="_blank"
+              >https://www.linkedin.com/in/justine-baillet/</a
+            >
+          </div>
+        </div>
+        <div class="back-top">
+          <a href="#header">
+            <img
+              src="./assets/img/icons/flècheBlanche.svg"
+              id="flèche"
+              alt="imageFlèche"
+            />
+            <p>Retour en haut</p></a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

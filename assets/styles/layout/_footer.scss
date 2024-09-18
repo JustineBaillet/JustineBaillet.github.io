@@ -1,0 +1,103 @@
+footer {
+  background: $color1;
+  color: white;
+  padding: 35px 0 25px;
+  .footer-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80% 20%;
+    h4 {
+      color: $color2;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      font-family: $font1;
+
+      @media screen and (max-width: 970px) {
+        margin-top: 25px;
+        text-align: center;
+      }
+    }
+    .infos {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding-left: 8vw;
+
+      .infos-3 {
+        display: flex;
+        flex-direction: column;
+        a {
+          color: white;
+          font-size: 1.1rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          @media screen and (max-width: 970px) {
+            text-align: center;
+          }
+        }
+      }
+
+      p {
+        padding-right: 20px;
+
+        @media screen and (max-width: 970px) {
+          text-align: center;
+          padding: 0;
+        }
+      }
+
+      @media screen and (max-width: 1150px) {
+        padding-left: 3vh;
+      }
+
+      @media screen and (max-width: 970px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        padding: 0;
+      }
+    }
+
+    .back-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      a {
+        color: white;
+        img {
+          transform: rotate(275deg) translateY(-27%);
+          width: 240px;
+          margin-bottom: 20px;
+          @media screen and (max-width: 1150px) {
+            width: 200px;
+          }
+        }
+        p {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      @media screen and (max-width: 970px) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 970px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      padding: 0 10px;
+    }
+  }
+  @media screen and (max-width: 970px) {
+    padding: 0 0 15px;
+  }
+  @media screen and (max-width: 640px) {
+    padding: 0 0 10vh 0;
+  }
+}

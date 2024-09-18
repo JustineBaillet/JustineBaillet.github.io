@@ -1,96 +1,242 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Créations Graphiques</title>
-  <link rel="shortcut icon" href="/assets/images/logos/logo_portfolio.svg" type="image/svg">
-  <link rel="stylesheet" href="/assets/styles/css/style.css" />
-  <link rel="stylesheet" href="/assets/styles/css/créations.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script src="/assets/js/script.js" defer></script>
-</head>
-<body>
-  <header>
-    <nav id="nav">
-      <div class="Logo">
-        <a href="/index.html"><img src="/assets/images/logos/logo_portfolio.svg" alt="Logo JB" /></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portefolio - Projets Créations Graphiques</title>
+    <link
+      rel="shortcut icon"
+      href="../img/logo_portfolio.svg"
+      type="image/svg"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <script defer src="../js/script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo-jb">
+        <a href="../../index.html"
+          ><img src="../img/logo_portfolio.svg" alt="logo-site"
+        /></a>
       </div>
       <ul>
-        <li><a href="/assets/html/projets.html">Projets UX/UI</a></li>
-        <li><a href="/assets/html/créationsGraphiques.html">Créations Graphiques</a></li>
-        <li><a href="/assets/html/créationsPersonnelles.html">Créations Personnelles</a></li>
-        <li><a href="/assets/html/contact.html">Contact</a></li>
+        <li><a href="../../index.html">à propos</a></li>
+        <li id="liProjets">
+          <a href="#">projets</a>
+          <div class="second-navbar">
+            <ul>
+              <li><a href="./webDesign.html">web design</a></li>
+              <li>
+                <a href="./créationsGraphiques.html">créations graphiques</a>
+              </li>
+              <li>
+                <a href="./réalisationsPersonnelles.html"
+                  >réalisations personneles</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#contact">contact</a></li>
       </ul>
-      <div id="icons"></div>
     </nav>
-  </header>
-  <main id="main">
-    <section class="sectionCréations">
-      <div class="Créations">
-        <div class="bannière">
-          <h2>Créations Graphiques</h2>
+    <main>
+      <section class="sectionsCréations">
+        <h1>projets - créations <br /><span>graphiques</span></h1>
+        <div class="section-créations-container-1">
+          <div class="carousel">
+            <button class="btnCarousel1" id="prev1">&#10096;</button>
+            <button class="btnCarousel1" id="next1">&#10097;</button>
+            <ul>
+              <li class="slide1 active1">
+                <img
+                  src="../img/Créations graphiques/premier slider/BF.png"
+                  alt="ImageSiteBelleFourrure"
+                />
+              </li>
+              <li class="slide1">
+                <img
+                  src="../img/Créations graphiques/premier slider/bouteille shampoo.png"
+                  alt="ImageSiteBelleFourrure"
+                />
+              </li>
+              <li class="slide1">
+                <img
+                  src="../img/Créations graphiques/premier slider/mockup carte de visite.png"
+                  alt="ImageSiteBelleFourrure"
+                />
+              </li>
+              <li class="slide1">
+                <img
+                  src="../img/Créations graphiques/premier slider/sachet pâté.png"
+                  alt="ImageSiteBelleFourrure"
+                />
+              </li>
+            </ul>
+          </div>
+          <p>
+            Belle Fourrure est un salon de toilettage fictif. Dans le cadre d'un
+            projet fictif, j'ai donné vie à l'univers imaginatif de "Belle
+            Fourrure", un salon de toilettage fictif conçu pour chérir nos amis
+            à quatre pattes avec élégance et bienveillance. <br />
+            <br />L'objectif était de concevoir une identité visuelle qui
+            incarne l'amour des animaux, l'élégance du toilettage, et
+            l'engagement envers le bien-être. <br />
+            <br />
+            J'ai créé un logo distinctif, une palette de couleurs apaisante, et
+            des éléments graphiques inspirés par la douceur et l'harmonie.
+            <br />
+            <br />Chaque détail a été soigneusement choisi pour transmettre la
+            qualité, la confiance et l'engagement envers le confort de nos amis
+            à poils.
+          </p>
         </div>
-        <div class="listCréations">
-          <div class="Création animate__animated animate__fadeIn" id="Logos">
-            <div class="Création_img"> <a href="/assets/html/logos.html"><img
-                  src="../images/Créations graphiques/logojb.jpg" alt="Img Logo" /> </div>
-            <div class="Création_p">
-              <p>Logos</p></a>
-            </div>
-          </div>
-          <div class="Création animate__animated animate__fadeIn" id="Illustrations">
-            <div class="Création_img"> <a href="/assets/html/illustrations.html"><img
-                  src="../images/Créations graphiques/illustrations2.webp" alt="Img illustrator" /> </div>
-            <div class="Création_p">
-              <p>Illustrator</p></a>
-            </div>
-          </div>
-          <div class="Création animate__animated animate__fadeIn" id="Photographies">
-            <div class="Création_img"> <a href="/assets/html/photographies.html"><img
-                  src="../images/Créations graphiques/photographie2.webp" alt="Img photographies" /> </div>
-            <div class="Création_p">
-              <p>Photographies</p></a>
-            </div>
-          </div>
-          <div class="Création animate__animated animate__fadeIn" id="Affiches">
-            <div class="Création_img"> <a href="/assets/html/affiches.html"><img
-                  src="../images/Créations graphiques/affiche2.webp" alt="Img affiche" /> </div>
-            <div class="Création_p">
-              <p>Affiches</p></a>
-            </div>
-          </div>
-          <div class="Création animate__animated animate__fadeIn" id="">
-            <div class="Création_img"> <a href="../html/IdentitésVisuelles.html"><img
-                  src="../images/Créations graphiques/identités visuelles.jpg" alt="Img Identités Visuelles" /> </div>
-            <div class="Création_p">
-              <p>Identités Visuelles</p></a>
-            </div>
-          </div>
-          <div class="Création animate__animated animate__fadeIn" id="">
-            <div class="Création_img"> <a href="../html/vidéos.html"><img src="../images/Créations graphiques/vidéos.jpg"
-                  alt="img Vidéos" /> </div>
-            <div class="Création_p">
-              <p>Vidéos</p></a>
-            </div>
-          </div>
-        </div>
-    </section>
-  </main>
-  <footer>
-    <div class="footer_links">
-      <div class="footer1">
-        <a href="https://www.linkedin.com/in/justine-baillet/" target="_blank" class="footer_item">
-          <img src="/assets/images/logos/logolinkedin.webp" alt="logo linkedin" /></a>
-        <a href="mailto:jub60@hotmail.fr" class="footer_item">
-          <img src="/assets/images/logos/logomail.webp" alt="logo mail" /></a>
-        </div>
-      <div class="footer2">
-        <a href="/index.html" class="footer_logo">
-          <img src="/assets/images/logos/logoJbFooter.webp" alt="Logo JB" /></a>
+        <p>
+          Le choix du nom reflète l'essence même du salon, associant la beauté à
+          la richesse des fourrures. "Belle" évoque l'aspect gracieux, tandis
+          que "Fourrure" met en avant mon dévouement pour sublimer chaque pelage
+          avec élégance. <br />
+          <br />Chaque élément de l'identité visuelle raconte une histoire, du
+          mouvement artistique du logo à la palette de couleurs qui évoque
+          l'idée d'un salon où l'on célèbre la splendeur naturelle de chaque
+          animal.
+        </p>
+      </section>
+      <div class="img-flèche-container">
+        <img
+          src="../img/icons/flècheRose.svg"
+          id="flècheRose1"
+          alt="Imageflèche"
+        />
       </div>
-    </div>
-  </footer>
-</body>
+      <section class="sectionsCréations">
+        <div class="section-créations-container-2">
+          <p>
+            Grâce à Illustrator, je suis capable de créer toute sorte
+            d'illustration, allant du plus simple logo à une illustration très
+            détaillée, servant dans divers projets. Cet outil puissant me permet
+            de manipuler les formes, les couleurs et les typographies avec une
+            grande précision. Par exemple, pour la création de logos,
+            Illustrator offre une flexibilité sans pareille, permettant de
+            concevoir des éléments graphiques uniques et parfaitement adaptés
+            aux besoins de chaque marque. Les outils de tracé vectoriel
+            permettent de réaliser des courbes fluides et des lignes nettes,
+            essentielles pour une identité visuelle professionnelle. <br />
+            <br />
+            En outre, lorsque je travaille sur des illustrations détaillées,
+            comme des dessins techniques ou des illustrations pour des
+            publications, Illustrator se révèle indispensable. Il permet de
+            zoomer à des niveaux extrêmement fins sans perte de qualité, ce qui
+            est crucial pour les projets nécessitant une grande minutie. Les
+            calques et les groupes facilitent l'organisation du travail, rendant
+            la gestion de projets complexes beaucoup plus intuitive.
+          </p>
+          <div class="carousel">
+            <button class="btnCarousel2" id="prev2">&#10096;</button>
+            <button class="btnCarousel2" id="next2">&#10097;</button>
+            <ul>
+              <li class="slide2 active2">
+                <img
+                  src="../img/Créations graphiques/2eme slider/oiseau bleu.png"
+                  alt="ImageLogoSite"
+                />
+              </li>
+              <li class="slide2">
+                <img
+                  src="../img/Créations graphiques/2eme slider/ben10.png"
+                  alt="ImageLogoSite"
+                />
+              </li>
+              <li class="slide2">
+                <img
+                  src="../img/Créations graphiques/2eme slider/BF.png"
+                  alt="ImageLogoSite"
+                />
+              </li>
+              <li class="slide2">
+                <img
+                  src="../img/Créations graphiques/2eme slider/cornelia.png"
+                  alt="ImageLogoSite"
+                />
+              </li>
+              <li class="slide2">
+                <img
+                  src="../img/Créations graphiques/2eme slider/mei.png"
+                  alt="ImageLogoSite"
+                />
+              </li>
+              <li class="slide2">
+                <img
+                  src="../img/Créations graphiques/2eme slider/ozoone.png"
+                  alt="ImageLogoSite"
+                />
+              </li>
+              <li class="slide2">
+                <img
+                  src="../img/Créations graphiques/2eme slider/plum.png"
+                  alt="ImageLogoSite"
+                />
+              </li>
+              <li class="slide2">
+                <img
+                  src="../img/Créations graphiques/2eme slider/tower.png"
+                  alt="ImageLogoSite"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          Illustrator s'intègre également parfaitement avec d'autres logiciels
+          de la suite Adobe, comme Photoshop et InDesign, ce qui simplifie le
+          processus de transfert et de retouche d'images. Cela permet de créer
+          des compositions visuelles cohérentes et harmonieuses, quel que soit
+          le support final : affiches, brochures, sites web, ou animations.
+          Enfin, la large gamme de formats d'exportation d'Illustrator assure
+          que les illustrations peuvent être utilisées sur divers supports
+          numériques et imprimés, garantissant une qualité optimale dans toutes
+          les situations.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container" id="contact">
+        <div class="infos">
+          <div class="infos-1">
+            <h4>baillet justine</h4>
+            <p>
+              Le design n'est pas juste ce qu'on voit, mais ce qu'on ressent.
+            </p>
+          </div>
+          <div class="infos-2">
+            <h4>carrière</h4>
+            <p>SNPS (Police Scientifique) - Graphiste/Web Designer</p>
+            <p>Net Hygiène - Web Designer/Graphiste</p>
+            <p>Andromed - Web Designer/Graphiste</p>
+          </div>
+          <div class="infos-3">
+            <h4>contact</h4>
+            <a href="mailto:jub60@hotmail.fr" target="_blank"
+              >jub60@hotmail.fr</a
+            >
+            <a
+              href="https://www.linkedin.com/in/justine-baillet/"
+              target="_blank"
+              >https://www.linkedin.com/in/justine-baillet/</a
+            >
+          </div>
+        </div>
+        <div class="back-top">
+          <a href="#header">
+            <img
+              src="../img/icons/flècheBlanche.svg"
+              id="flèche"
+              alt="imageFlèche"
+            />
+            <p>Retour en haut</p></a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

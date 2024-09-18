@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Andika";
+  src: url(../fonts/Andika-Regular.ttf);
+}
+@font-face {
+  font-family: "Andika";
+  src: url(../fonts/Andika-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url(../fonts/Karla-Regular.ttf);
+}
+
+$font1: Andika, serif;
+$font2: Karla, serif;
+$color1: #3262ac;
+$color2: #f8cacc;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-align: justify;
+
+  -webkit-tap-highlight-color: transparent;
+
+  &::selection {
+    color: #ffffff;
+    background: #f8cacc;
+  }
+}
+
+body {
+  min-height: 100vh;
+  padding-top: 10vh;
+  overflow-x: hidden;
+
+  @media screen and (max-width: 640px) {
+    padding-top: 0;
+  }
+}
+
+h1 {
+  color: $color1;
+  margin: 50px 0 0;
+  font-size: 5rem;
+  font-family: $font2;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: left;
+  min-width: 70%;
+
+  span {
+    color: $color2;
+  }
+  @media screen and (max-width: 980px) {
+    font-size: 3rem;
+    text-align: center;
+  }
+  @media screen and (max-width: 570px) {
+    font-size: 2rem;
+  }
+}
+
+p {
+  font-family: $font1;
+  font-size: 1.1rem;
+  @media screen and (max-width: 1400px) {
+    font-size: 1rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-family: $font1;
+  color: black;
+  cursor: pointer;
+}
+// scrollbar
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $color2;
+  border-radius: 20px;
+}
+
+.img-flèche-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  #flècheRose1 {
+    height: 150px;
+    align-items: center;
+    @media screen and (max-width: 980px) {
+      height: 100px;
+    }
+  }
+  #flècheRose2 {
+    height: 150px;
+    transform: rotateY(180deg);
+    @media screen and (max-width: 980px) {
+      height: 100px;
+    }
+  }
+}
